@@ -80,7 +80,13 @@ export default function ComparisonList({ mode, onEntityClick, graphData }: Compa
                   key={idx} 
                   className={`bg-myth-card border ${isExpanded ? 'border-myth-accent-gold/50 shadow-lg' : 'border-myth-accent-gold/10 hover:border-myth-accent-gold/30'} p-4 rounded-xl transition-all group flex flex-col`}
                 >
-                  <div className="flex justify-between items-center cursor-pointer" onClick={() => setExpandedItem(isExpanded ? null : item.character)}>
+                  <button
+                    type="button"
+                    aria-expanded={isExpanded}
+                    aria-label={`Expand details for ${item.character}`}
+                    onClick={() => setExpandedItem(isExpanded ? null : item.character)}
+                    className="w-full flex justify-between items-center text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-lg p-1"
+                  >
                     <div className="flex items-center gap-4">
                       <div className="w-8 h-8 rounded-full bg-myth-accent-gold/10 flex items-center justify-center text-myth-accent-gold font-jetbrains text-sm">
                         {idx + 1}
@@ -110,7 +116,7 @@ export default function ComparisonList({ mode, onEntityClick, graphData }: Compa
                       )}
                       {isExpanded ? <ChevronUp size={20} className="text-myth-text-secondary" /> : <ChevronDown size={20} className="text-myth-text-secondary" />}
                     </div>
-                  </div>
+                  </button>
 
                   {isExpanded && (
                     <MiniGraph 

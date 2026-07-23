@@ -72,20 +72,36 @@ export default function FloatingChatWidget({ universeId, onEntityClick }: Floati
     <div className={`absolute bottom-6 right-6 bg-myth-card border border-myth-accent-gold/20 shadow-2xl flex flex-col transition-all duration-300 z-50 ${isMinimized ? 'w-64 h-12 rounded-t-xl rounded-b-xl' : 'w-96 h-[500px] rounded-xl overflow-hidden'}`}>
       
       {/* Header */}
-      <div className="h-12 bg-myth-bg-dark border-b border-myth-accent-gold/10 flex justify-between items-center px-4 shrink-0 cursor-pointer" onClick={() => setIsMinimized(!isMinimized)}>
+      <button
+        type="button"
+        aria-expanded={!isMinimized}
+        aria-label="Toggle Oracle chat widget view"
+        onClick={() => setIsMinimized(!isMinimized)}
+        className="w-full h-12 bg-myth-bg-dark border-b border-myth-accent-gold/10 flex justify-between items-center px-4 shrink-0 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400"
+      >
         <div className="flex items-center gap-2 text-myth-accent-gold">
           <MessageSquare size={16} />
           <span className="font-cormorant font-medium tracking-wide">Ask the Oracle</span>
         </div>
         <div className="flex gap-2 text-myth-text-secondary">
-          <button className="hover:text-white transition-colors" onClick={(e) => { e.stopPropagation(); setIsMinimized(!isMinimized); }}>
+          <button
+            type="button"
+            aria-label={isMinimized ? "Maximize chat" : "Minimize chat"}
+            className="hover:text-white transition-colors p-1"
+            onClick={(e) => { e.stopPropagation(); setIsMinimized(!isMinimized); }}
+          >
             {isMinimized ? <Maximize2 size={14} /> : <Minimize2 size={14} />}
           </button>
-          <button className="hover:text-white transition-colors" onClick={(e) => { e.stopPropagation(); setIsOpen(false); }}>
+          <button
+            type="button"
+            aria-label="Close Oracle chat"
+            className="hover:text-white transition-colors p-1"
+            onClick={(e) => { e.stopPropagation(); setIsOpen(false); }}
+          >
             <X size={16} />
           </button>
         </div>
-      </div>
+      </button>
 
       {/* Chat Body */}
       {!isMinimized && (
