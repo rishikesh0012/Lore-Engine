@@ -452,11 +452,15 @@ def get_shortest_path(start: str, target: str):
 
 @router.get("/analytics")
 def get_graph_analytics():
+    dash_data = _get_live_dashboard_data()
+    rel_count = dash_data["relationship_count"]
+    entity_count = dash_data["total_entities"]
+    
     return {
         "network_stats": {
-            "node_count": 184,
-            "edge_count": 1145,
-            "avg_degree": 12.4,
+            "node_count": entity_count,
+            "edge_count": rel_count,
+            "avg_degree": round(rel_count / max(1, entity_count), 2),
             "density": 0.068,
             "diameter": 5
         },
@@ -475,10 +479,10 @@ def get_graph_analytics():
             {"degree_range": "31+", "count": 5}
         ],
         "source_contributions": [
-            {"source": "Homer's Iliad", "relationships": 913, "percentage": 79.7},
-            {"source": "Hesiod's Theogony", "relationships": 87, "percentage": 7.6},
-            {"source": "Homer's Odyssey", "relationships": 53, "percentage": 4.6},
-            {"source": "Ovid's Metamorphoses", "relationships": 92, "percentage": 8.0}
+            {"source": "Homer's Iliad", "relationships": 913, "percentage": 58.7},
+            {"source": "Ovid's Metamorphoses", "relationships": 503, "percentage": 32.3},
+            {"source": "Hesiod's Theogony", "relationships": 87, "percentage": 5.6},
+            {"source": "Homer's Odyssey", "relationships": 53, "percentage": 3.4}
         ]
     }
 
