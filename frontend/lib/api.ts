@@ -2,14 +2,34 @@ import { Character, Relationship, GraphNode, GraphLink, DashboardData, Analytics
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api";
 const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK_DATA === "true";
+const DEFAULT_TIMEOUT_MS = 8000;
 
 export function getApiBaseUrl(): string {
   return API_BASE_URL;
 }
 
+async function fetchWithTimeout(url: string, options: RequestInit = {}, timeoutMs = DEFAULT_TIMEOUT_MS): Promise<Response> {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal
+    });
+    clearTimeout(id);
+    return response;
+  } catch (error: any) {
+    clearTimeout(id);
+    if (error.name === "AbortError") {
+      throw new Error(`Request timeout after ${timeoutMs / 1000}s while fetching ${url}`);
+    }
+    throw error;
+  }
+}
+
 export async function fetchHealthStatus(): Promise<{ status: string; neo4j: boolean; qdrant: boolean }> {
   try {
-    const res = await fetch(`${API_BASE_URL}/health`);
+    const res = await fetchWithTimeout(`${API_BASE_URL}/health`, {}, 5000);
     if (!res.ok) throw new Error("Health check failed");
     return await res.json();
   } catch (e) {
@@ -22,12 +42,12 @@ export async function fetchHealthStatus(): Promise<{ status: string; neo4j: bool
 
 export async function fetchDashboard(): Promise<DashboardData> {
   try {
-    const res = await fetch(`${API_BASE_URL}/dashboard`);
+    const res = await fetchWithTimeout(`${API_BASE_URL}/dashboard`);
     if (!res.ok) throw new Error(`Dashboard API error (${res.status})`);
     return await res.json();
   } catch (e) {
     if (!USE_MOCK) {
-      throw new Error(`Failed to load Dashboard data from backend: ${(e as Error).message}`);
+      throw new Error(`Failed to load Dashboard data: ${(e as Error).message}`);
     }
     return {
       stats: { total_characters: 184, total_relationships: 1145, sources_indexed: 4, active_conflicts: 52 },
@@ -68,12 +88,12 @@ export async function fetchCharacters(search?: string): Promise<{ items: Charact
   try {
     const url = new URL(`${API_BASE_URL}/characters`);
     if (search) url.searchParams.append("search", search);
-    const res = await fetch(url.toString());
+    const res = await fetchWithTimeout(url.toString());
     if (!res.ok) throw new Error(`Characters API error (${res.status})`);
     return await res.json();
   } catch (e) {
     if (!USE_MOCK) {
-      throw new Error(`Failed to load Characters from backend: ${(e as Error).message}`);
+      throw new Error(`Failed to load Characters: ${(e as Error).message}`);
     }
     return {
       total: 8,
@@ -88,7 +108,7 @@ export async function fetchCharacters(search?: string): Promise<{ items: Charact
 
 export async function fetchCharacterProfile(id: string): Promise<any> {
   try {
-    const res = await fetch(`${API_BASE_URL}/characters/${id}`);
+    const res = await fetchWithTimeout(`${API_BASE_URL}/characters/${id}`);
     if (!res.ok) throw new Error(`Profile API error (${res.status})`);
     return await res.json();
   } catch (e) {
@@ -110,12 +130,12 @@ export async function fetchRelationships(filterType?: string, search?: string): 
     const url = new URL(`${API_BASE_URL}/relationships`);
     if (filterType && filterType !== "ALL") url.searchParams.append("relation_type", filterType);
     if (search) url.searchParams.append("search", search);
-    const res = await fetch(url.toString());
+    const res = await fetchWithTimeout(url.toString());
     if (!res.ok) throw new Error(`Relationships API error (${res.status})`);
     return await res.json();
   } catch (e) {
     if (!USE_MOCK) {
-      throw new Error(`Failed to load Relationships from backend: ${(e as Error).message}`);
+      throw new Error(`Failed to load Relationships: ${(e as Error).message}`);
     }
     return {
       total: 5,
@@ -129,12 +149,12 @@ export async function fetchRelationships(filterType?: string, search?: string): 
 
 export async function fetchGraph(): Promise<{ nodes: GraphNode[]; links: GraphLink[] }> {
   try {
-    const res = await fetch(`${API_BASE_URL}/graph`);
+    const res = await fetchWithTimeout(`${API_BASE_URL}/graph`);
     if (!res.ok) throw new Error(`Graph API error (${res.status})`);
     return await res.json();
   } catch (e) {
     if (!USE_MOCK) {
-      throw new Error(`Failed to load Knowledge Graph from backend: ${(e as Error).message}`);
+      throw new Error(`Failed to load Knowledge Graph: ${(e as Error).message}`);
     }
     return {
       nodes: [
@@ -154,12 +174,12 @@ export async function fetchGraph(): Promise<{ nodes: GraphNode[]; links: GraphLi
 
 export async function fetchAnalytics(): Promise<AnalyticsData> {
   try {
-    const res = await fetch(`${API_BASE_URL}/analytics`);
+    const res = await fetchWithTimeout(`${API_BASE_URL}/analytics`);
     if (!res.ok) throw new Error(`Analytics API error (${res.status})`);
     return await res.json();
   } catch (e) {
     if (!USE_MOCK) {
-      throw new Error(`Failed to load Analytics from backend: ${(e as Error).message}`);
+      throw new Error(`Failed to load Analytics: ${(e as Error).message}`);
     }
     return {
       network_stats: { node_count: 184, edge_count: 1145, avg_degree: 12.4, density: 0.068, diameter: 5 },
@@ -181,11 +201,11 @@ export async function fetchAnalytics(): Promise<AnalyticsData> {
 
 export async function askQuestion(query: string, sourceFilter?: string): Promise<AskResponse> {
   try {
-    const res = await fetch(`${API_BASE_URL}/ask`, {
+    const res = await fetchWithTimeout(`${API_BASE_URL}/ask`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query, source_filter: sourceFilter })
-    });
+    }, 12000);
     if (!res.ok) throw new Error(`Ask API error (${res.status})`);
     return await res.json();
   } catch (e) {
@@ -206,11 +226,11 @@ export async function askQuestion(query: string, sourceFilter?: string): Promise
 
 export async function compareSources(sourceA: string, sourceB: string): Promise<CompareResponse> {
   try {
-    const res = await fetch(`${API_BASE_URL}/compare`, {
+    const res = await fetchWithTimeout(`${API_BASE_URL}/compare`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ source_a: sourceA, source_b: sourceB })
-    });
+    }, 12000);
     if (!res.ok) throw new Error(`Comparison API error (${res.status})`);
     return await res.json();
   } catch (e) {
