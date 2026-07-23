@@ -8,6 +8,8 @@ import Starfield from "@/components/Starfield";
 import dynamic from "next/dynamic";
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
 
+import { getApiBaseUrl } from "@/lib/api";
+
 export default function Home() {
   const [contradictions, setContradictions] = useState<any[]>([]);
   const [query, setQuery] = useState("");
@@ -20,7 +22,7 @@ export default function Home() {
   const [graphWidth, setGraphWidth] = useState(600);
 
   useEffect(() => {
-    fetch("http://localhost:8002/api/contradictions")
+    fetch(`${getApiBaseUrl()}/contradictions`)
       .then(res => res.json())
       .then(data => setContradictions(data))
       .catch(err => console.error("Failed to fetch contradictions", err));
@@ -40,7 +42,7 @@ export default function Home() {
     setAnswer(null);
     setGraphData(null);
     try {
-      const res = await fetch("http://localhost:8002/api/query", {
+      const res = await fetch(`${getApiBaseUrl()}/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query })

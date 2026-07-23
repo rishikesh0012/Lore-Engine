@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
+import { getApiBaseUrl } from "@/lib/api";
 
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
 
@@ -14,7 +15,7 @@ export default function MiniGraph({ entityLabel, isConflictMode }: MiniGraphProp
   const [localGraph, setLocalGraph] = useState({ nodes: [], links: [] });
 
   useEffect(() => {
-    fetch(`http://localhost:8002/api/graph?entity=${encodeURIComponent(entityLabel)}`)
+    fetch(`${getApiBaseUrl()}/graph?entity=${encodeURIComponent(entityLabel)}`)
       .then(res => res.json())
       .then(data => {
         const filteredLinks = data.links.filter((l: any) => l.type !== "MENTIONED_IN");

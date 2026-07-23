@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Filter, Loader2, AlertTriangle, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 import MiniGraph from "./MiniGraph";
+import { getApiBaseUrl } from "@/lib/api";
 
 interface ComparisonListProps {
   mode: "Overlap" | "Conflicts";
@@ -18,8 +19,8 @@ export default function ComparisonList({ mode, onEntityClick, graphData }: Compa
     setIsLoading(true);
     
     const endpoint = mode === "Conflicts" 
-      ? "http://localhost:8002/api/most-contested?limit=50"
-      : "http://localhost:8002/api/key-figures?source=&limit=50"; 
+      ? `${getApiBaseUrl()}/most-contested?limit=50`
+      : `${getApiBaseUrl()}/key-figures?source=&limit=50`;  
 
     fetch(endpoint)
       .then(res => res.json())

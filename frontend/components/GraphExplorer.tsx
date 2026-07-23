@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import ForceGraph2D from "react-force-graph-2d";
 import { X, ExternalLink, User, GitCompare, Loader2 } from "lucide-react";
+import { getApiBaseUrl } from "@/lib/api";
 
 export default function GraphExplorer() {
   const [graphData, setGraphData] = useState({ nodes: [], links: [] });
@@ -20,7 +21,7 @@ export default function GraphExplorer() {
   const [isLoadingCompare, setIsLoadingCompare] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8002/api/graph")
+    fetch(`${getApiBaseUrl()}/graph`)
       .then(res => res.json())
       .then(data => setGraphData(data))
       .catch(err => console.error("Failed to load graph", err));
@@ -43,7 +44,7 @@ export default function GraphExplorer() {
     setIsLoadingProfile(true);
     setProfileData(null);
     try {
-      const res = await fetch("http://localhost:8002/api/query", {
+      const res = await fetch(`${getApiBaseUrl()}/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: `Provide a detailed narrative profile of ${nodeLabel}.` })
@@ -61,7 +62,7 @@ export default function GraphExplorer() {
     setIsLoadingCompare(true);
     setCompareResult(null);
     try {
-      const res = await fetch("http://localhost:8002/api/query", {
+      const res = await fetch(`${getApiBaseUrl()}/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: `Compare ${node1} and ${node2}. What are their similarities, differences, and any contradictions in Greek mythology?` })

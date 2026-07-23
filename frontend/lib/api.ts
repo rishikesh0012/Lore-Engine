@@ -1,14 +1,34 @@
 import { Character, Relationship, GraphNode, GraphLink, DashboardData, AnalyticsData, AskResponse, CompareResponse } from "./types";
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api";
+const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK_DATA === "true";
+
+export function getApiBaseUrl(): string {
+  return API_BASE_URL;
+}
+
+export async function fetchHealthStatus(): Promise<{ status: string; neo4j: boolean; qdrant: boolean }> {
+  try {
+    const res = await fetch(`${API_BASE_URL}/health`);
+    if (!res.ok) throw new Error("Health check failed");
+    return await res.json();
+  } catch (e) {
+    if (USE_MOCK) {
+      return { status: "ok (mock)", neo4j: true, qdrant: true };
+    }
+    return { status: "offline", neo4j: false, qdrant: false };
+  }
+}
 
 export async function fetchDashboard(): Promise<DashboardData> {
   try {
     const res = await fetch(`${API_BASE_URL}/dashboard`);
-    if (!res.ok) throw new Error("Dashboard fetch failed");
+    if (!res.ok) throw new Error(`Dashboard API error (${res.status})`);
     return await res.json();
   } catch (e) {
-    console.warn("Using fallback mock dashboard data", e);
+    if (!USE_MOCK) {
+      throw new Error(`Failed to load Dashboard data from backend: ${(e as Error).message}`);
+    }
     return {
       stats: { total_characters: 184, total_relationships: 1145, sources_indexed: 4, active_conflicts: 52 },
       sources: [
@@ -49,9 +69,12 @@ export async function fetchCharacters(search?: string): Promise<{ items: Charact
     const url = new URL(`${API_BASE_URL}/characters`);
     if (search) url.searchParams.append("search", search);
     const res = await fetch(url.toString());
-    if (!res.ok) throw new Error("Characters fetch failed");
+    if (!res.ok) throw new Error(`Characters API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to load Characters from backend: ${(e as Error).message}`);
+    }
     return {
       total: 8,
       items: [
@@ -66,9 +89,12 @@ export async function fetchCharacters(search?: string): Promise<{ items: Charact
 export async function fetchCharacterProfile(id: string): Promise<any> {
   try {
     const res = await fetch(`${API_BASE_URL}/characters/${id}`);
-    if (!res.ok) throw new Error("Profile fetch failed");
+    if (!res.ok) throw new Error(`Profile API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to load Character Profile for ${id}: ${(e as Error).message}`);
+    }
     return {
       profile: { id, name: id.toUpperCase(), title: "Mythological Figure", tradition: "Ancient", sources: ["Hesiod", "Homer"], aliases: [id], connectionsCount: 12, conflictCount: 1, avatar: "🏛️", summary: "Classical figure." },
       relationships: [
@@ -85,9 +111,12 @@ export async function fetchRelationships(filterType?: string, search?: string): 
     if (filterType && filterType !== "ALL") url.searchParams.append("relation_type", filterType);
     if (search) url.searchParams.append("search", search);
     const res = await fetch(url.toString());
-    if (!res.ok) throw new Error("Relationships fetch failed");
+    if (!res.ok) throw new Error(`Relationships API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to load Relationships from backend: ${(e as Error).message}`);
+    }
     return {
       total: 5,
       items: [
@@ -101,9 +130,12 @@ export async function fetchRelationships(filterType?: string, search?: string): 
 export async function fetchGraph(): Promise<{ nodes: GraphNode[]; links: GraphLink[] }> {
   try {
     const res = await fetch(`${API_BASE_URL}/graph`);
-    if (!res.ok) throw new Error("Graph fetch failed");
+    if (!res.ok) throw new Error(`Graph API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to load Knowledge Graph from backend: ${(e as Error).message}`);
+    }
     return {
       nodes: [
         { id: "Zeus", label: "Zeus", group: "Greek", val: 42 },
@@ -123,9 +155,12 @@ export async function fetchGraph(): Promise<{ nodes: GraphNode[]; links: GraphLi
 export async function fetchAnalytics(): Promise<AnalyticsData> {
   try {
     const res = await fetch(`${API_BASE_URL}/analytics`);
-    if (!res.ok) throw new Error("Analytics fetch failed");
+    if (!res.ok) throw new Error(`Analytics API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to load Analytics from backend: ${(e as Error).message}`);
+    }
     return {
       network_stats: { node_count: 184, edge_count: 1145, avg_degree: 12.4, density: 0.068, diameter: 5 },
       centrality_rankings: [
@@ -151,9 +186,12 @@ export async function askQuestion(query: string, sourceFilter?: string): Promise
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query, source_filter: sourceFilter })
     });
-    if (!res.ok) throw new Error("Ask query failed");
+    if (!res.ok) throw new Error(`Ask API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to process query on backend: ${(e as Error).message}`);
+    }
     return {
       answer: `Cross-referencing mythological sources for: "${query}". Zeus is confirmed as father of Athena and Apollo.`,
       confidence: 0.94,
@@ -173,9 +211,12 @@ export async function compareSources(sourceA: string, sourceB: string): Promise<
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ source_a: sourceA, source_b: sourceB })
     });
-    if (!res.ok) throw new Error("Comparison failed");
+    if (!res.ok) throw new Error(`Comparison API error (${res.status})`);
     return await res.json();
   } catch (e) {
+    if (!USE_MOCK) {
+      throw new Error(`Failed to compare sources on backend: ${(e as Error).message}`);
+    }
     return {
       source_a: sourceA,
       source_b: sourceB,

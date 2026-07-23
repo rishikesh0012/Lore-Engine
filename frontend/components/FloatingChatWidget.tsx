@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { MessageSquare, Send, Loader2, Minimize2, Maximize2, X } from "lucide-react";
+import { getApiBaseUrl } from "@/lib/api";
 
 interface FloatingChatWidgetProps {
   universeId: string;
@@ -36,7 +37,7 @@ export default function FloatingChatWidget({ universeId, onEntityClick }: Floati
       // The backend route is /api/universes/{id}/ask.
       const safeId = universeId === "Overlap" || universeId === "Conflicts" ? "global" : universeId;
       
-      const res = await fetch(`http://localhost:8002/api/universes/${safeId}/ask`, {
+      const res = await fetch(`${getApiBaseUrl()}/universes/${safeId}/ask`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: userMessage })

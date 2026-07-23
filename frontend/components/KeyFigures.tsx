@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Users, Loader2 } from "lucide-react";
+import { getApiBaseUrl } from "@/lib/api";
 
 interface KeyFiguresProps {
   source: string;
@@ -15,7 +16,7 @@ export default function KeyFigures({ source, onFigureClick }: KeyFiguresProps) {
     // Overlap view logic could use a different query without source, but here we just pass the source ID
     const sourceParam = source === "Overlap" ? "" : `?source=${source}`;
     
-    fetch(`http://localhost:8002/api/key-figures${sourceParam}`)
+    fetch(`${getApiBaseUrl()}/key-figures${sourceParam}`)
       .then(res => res.json())
       .then(data => {
         if (Array.isArray(data)) {

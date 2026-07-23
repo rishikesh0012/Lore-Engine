@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Route, GitCompare } from "lucide-react";
+import { getApiBaseUrl } from "@/lib/api";
 import GraphView from "@/components/GraphView";
 import KeyFigures from "@/components/KeyFigures";
 import EntityPanel from "@/components/EntityPanel";
@@ -44,7 +45,7 @@ export default function UniversePage() {
     const fetchGraph = async () => {
       try {
         const sourceParam = id === "Overlap" ? "" : `?source=${id}`;
-        const res = await fetch(`http://localhost:8002/api/graph${sourceParam}`);
+        const res = await fetch(`${getApiBaseUrl()}/graph${sourceParam}`);
         const data = await res.json();
         setGraphData(data);
       } catch (err) {
@@ -93,7 +94,7 @@ export default function UniversePage() {
     setProfileData(null);
     try {
       const source = (id !== "Overlap" && id !== "Conflicts") ? id : undefined;
-      const res = await fetch(`http://localhost:8002/api/profile/raw`, {
+      const res = await fetch(`${getApiBaseUrl()}/profile/raw`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: label, source: source })
@@ -109,7 +110,7 @@ export default function UniversePage() {
   const generateProfile = async (label: string) => {
     setIsSummarizing(true);
     try {
-      const res = await fetch(`http://localhost:8002/api/query`, {
+      const res = await fetch(`${getApiBaseUrl()}/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: `Provide a detailed mythological profile for ${label}. Focus on their origins, key myths, and relationships.` })
@@ -127,7 +128,7 @@ export default function UniversePage() {
     setCompareResult(null);
     try {
       const source = (id !== "Overlap" && id !== "Conflicts") ? id : undefined;
-      const res = await fetch(`http://localhost:8002/api/compare/raw`, {
+      const res = await fetch(`${getApiBaseUrl()}/compare/raw`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ queryA: nodeA.label, queryB: nodeB.label, source: source })
@@ -143,7 +144,7 @@ export default function UniversePage() {
   const generateComparison = async (nodeA: any, nodeB: any) => {
     setIsSummarizing(true);
     try {
-      const res = await fetch(`http://localhost:8002/api/query`, {
+      const res = await fetch(`${getApiBaseUrl()}/query`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: `Compare and contrast ${nodeA.label} and ${nodeB.label} in Greek mythology. What are their similarities, differences, and direct interactions?` })
