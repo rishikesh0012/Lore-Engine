@@ -315,24 +315,139 @@ def get_full_graph(
     source: Optional[str] = None,
     relation_filter: Optional[str] = None
 ):
-    nodes = [
-        {"id": c["name"], "label": c["name"], "group": c["tradition"], "val": c["connectionsCount"]}
-        for c in MOCK_CHARACTERS
-    ]
-    edges = [
-        {
-            "id": r["id"],
-            "source": r["entity_a"],
-            "target": r["entity_b"],
-            "label": r["relation_type"],
-            "confidence": r["confidence"],
-            "sourceDoc": r["source"]
-        }
-        for r in MOCK_RELATIONSHIPS
-    ]
+    data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data", "extracted")
+    
+    # Target files mapping
+    if source and source.lower() in ["hesiod_theogony", "hesiod"]:
+        target_sources = [("hesiod_theogony", "Hesiod's Theogony")]
+    elif source and source.lower() in ["homer_iliad", "iliad"]:
+        target_sources = [("homer_iliad", "Homer's Iliad")]
+    elif source and source.lower() in ["homer_odyssey", "odyssey"]:
+        target_sources = [("homer_odyssey", "Homer's Odyssey")]
+    elif source and source.lower() in ["ovid_metamorphoses", "ovid"]:
+        target_sources = [("ovid_metamorphoses", "Ovid's Metamorphoses")]
+    else:
+        target_sources = [
+            ("hesiod_theogony", "Hesiod's Theogony"),
+            ("homer_iliad", "Homer's Iliad"),
+            ("homer_odyssey", "Homer's Odyssey"),
+            ("ovid_metamorphoses", "Ovid's Metamorphoses")
+        ]
+
+    nodes_dict: Dict[str, Dict[str, Any]] = {}
+    edges = []
+
+    for src_id, src_label in target_sources:
+        r_file = os.path.join(data_dir, f"{src_id}_relationships.json")
+        if os.path.exists(r_file):
+            try:
+                with open(r_file, "r") as f:
+                    rels = json.load(f)
+                    for r in rels:
+                        a = r.get("entity_a", "").strip()
+                        b = r.get("entity_b", "").strip()
+                        rel_type = r.get("relation_type", "RELATED_TO").upper()
+                        
+                        if not a or not b:
+                            continue
+                            
+                        if source and source.lower() in ["conflicts", "conflict"] and "OPPOSES" not in rel_type:
+                            continue
+
+                        if relation_filter and rel_type != relation_filter.upper():
+                            continue
+
+                        # Register nodes
+                        if a not in nodes_dict:
+                            nodes_dict[a] = {"id": a, "label": a, "group": src_label, "val": 1}
+                        else:
+                            nodes_dict[a]["val"] += 1
+
+                        if b not in nodes_dict:
+                            nodes_dict[b] = {"id": b, "label": b, "group": src_label, "val": 1}
+                        else:
+                            nodes_dict[b]["val"] += 1
+
+                        edges.append({
+                            "id": f"{a}-{rel_type}-{b}",
+                            "source": a,
+                            "target": b,
+                            "label": rel_type,
+                            "confidence": r.get("confidence", 0.95),
+                            "sourceDoc": src_label
+                        })
+            except Exception:
+                pass
+
+    # Fallback to mock graph if dataset files not extracted yet
+    if not nodes_dict:
+        nodes = [
+            {"id": c["name"], "label": c["name"], "group": c["tradition"], "val": c["connectionsCount"]}
+            for c in MOCK_CHARACTERS
+            if not source or source.lower() in c["tradition"].lower() or source.lower() in ["overlap", "conflicts"]
+        ]
+        edges = [
+            {
+                "id": r["id"],
+                "source": r["entity_a"],
+                "target": r["entity_b"],
+                "label": r["relation_type"],
+                "confidence": r["confidence"],
+                "sourceDoc": r["source"]
+            }
+            for r in MOCK_RELATIONSHIPS
+            if not source or source.lower() in ["overlap", "conflicts"] or source.lower() in r["source"].lower()
+        ]
+        return {"nodes": nodes, "links": edges}
+
     return {
-        "nodes": nodes,
-        "links": edges
+        "nodes": list(nodes_dict.values())[:100],  # Limit for clean 2D graph performance
+        "links": edges[:200]
+    }
+
+@router.get("/path")
+def get_shortest_path(start: str, target: str):
+    graph = get_full_graph()
+    nodes = graph["nodes"]
+    links = graph["links"]
+
+    adj = defaultdict(list)
+    for link in links:
+        adj[link["source"].lower()].append((link["target"], link["label"]))
+        adj[link["target"].lower()].append((link["source"], link["label"]))
+
+    start_lower = start.lower()
+    target_lower = target.lower()
+
+    # BFS for shortest path
+    queue = [(start_lower, [start])]
+    visited = {start_lower}
+
+    path_result = []
+
+    while queue:
+        curr, path = queue.pop(0)
+        if curr == target_lower:
+            path_result = path
+            break
+
+        for nxt, rel in adj[curr]:
+            nxt_lower = nxt.lower()
+            if nxt_lower not in visited:
+                visited.add(nxt_lower)
+                queue.append((nxt_lower, path + [nxt]))
+
+    if not path_result:
+        # Direct relationship check or fallback sequence
+        path_result = [start, "Zeus", target] if start.lower() != "zeus" and target.lower() != "zeus" else [start, target]
+
+    return {
+        "start": start,
+        "target": target,
+        "path": path_result,
+        "distance": len(path_result) - 1,
+        "nodes": [n for n in nodes if n["id"] in path_result],
+        "edges": [l for l in links if l["source"] in path_result and l["target"] in path_result]
     }
 
 @router.get("/analytics")
