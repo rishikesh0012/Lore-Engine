@@ -212,14 +212,52 @@ export async function askQuestion(query: string, sourceFilter?: string): Promise
     if (!USE_MOCK) {
       throw new Error(`Failed to process query on backend: ${(e as Error).message}`);
     }
+
+    const qLower = query.toLowerCase();
+
+    if (qLower.includes("athena") || qLower.includes("born")) {
+      return {
+        answer: "According to Hesiod's Theogony, Athena was born fully armed from the head of Zeus after he swallowed Metis. Homer's Iliad and Odyssey further depict her as the grey-eyed champion of strategic warfare and wisdom who actively aids Telemachus and Odysseus.",
+        confidence: 0.98,
+        entities: ["Athena", "Zeus", "Metis", "Odysseus"],
+        passages: [
+          { source: "Hesiod's Theogony (lines 924-929)", text: "Zeus himself from his own head gave birth to bright-eyed Athena, the awful, strife-stirring leader of the host." },
+          { source: "Homer's Odyssey (Book 1, lines 44-50)", text: "Grey-eyed Athena spoke: 'O Father, King of Kings, Odysseus' heart is torn for his longing to return home.'" }
+        ],
+        graph_nodes: [{ id: "Zeus", label: "Zeus" }, { id: "Athena", label: "Athena" }, { id: "Metis", label: "Metis" }]
+      };
+    } else if (qLower.includes("poseidon") || qLower.includes("odysseus")) {
+      return {
+        answer: "The central conflict between Poseidon and Odysseus stems from Odysseus blinding Poseidon's cyclops son, Polyphemus, in Homer's Odyssey. In revenge, Poseidon vows that Odysseus shall suffer ten years of shipwreck and storm before reaching Ithaca.",
+        confidence: 0.96,
+        entities: ["Poseidon", "Odysseus", "Polyphemus", "Ithaca"],
+        passages: [
+          { source: "Homer's Odyssey (Book 9, lines 525-535)", text: "Hear me, Poseidon, lord of the dark waves: grant that Odysseus, raider of cities, never reaches his home in Ithaca!" },
+          { source: "Homer's Odyssey (Book 1, lines 68-75)", text: "Poseidon the Earth-shaker rages unceasingly against noble Odysseus because he blinded Polyphemus the Cyclops." }
+        ],
+        graph_nodes: [{ id: "Poseidon", label: "Poseidon" }, { id: "Odysseus", label: "Odysseus" }, { id: "Polyphemus", label: "Polyphemus" }]
+      };
+    } else if (qLower.includes("ovid") || qLower.includes("diff") || qLower.includes("zeus")) {
+      return {
+        answer: "In Ovid's Metamorphoses, Zeus (referred to as Jove/Jupiter) is portrayed with a focus on dramatic transformations, psychological passions, and Roman imperial allegories. In contrast, Hesiod's Theogony emphasizes cosmic lineage, divine order, and the Titanomachy.",
+        confidence: 0.92,
+        entities: ["Zeus", "Jove", "Ovid", "Hesiod", "Cronos"],
+        passages: [
+          { source: "Ovid's Metamorphoses (Book 1, lines 150-165)", text: "Jove from his high citadel looked down upon the crimes of mankind and commanded the Great Flood to cleanse the earth." },
+          { source: "Hesiod's Theogony (lines 453-465)", text: "Cronos swallowed his children as each came from the holy womb, but Zeus was hidden in Crete." }
+        ],
+        graph_nodes: [{ id: "Zeus", label: "Zeus" }, { id: "Jove", label: "Jove" }, { id: "Hesiod", label: "Hesiod" }]
+      };
+    }
+
     return {
-      answer: `Cross-referencing mythological sources for: "${query}". Zeus is confirmed as father of Athena and Apollo.`,
-      confidence: 0.94,
-      entities: ["Zeus", "Athena", "Apollo"],
+      answer: `Cross-referencing mythological graph index for query: "${query}". Graph retrieval identifies 3 primary entities and 5 connected relationships across Hesiod and Homer.`,
+      confidence: 0.90,
+      entities: ["Zeus", "Apollo", "Athena"],
       passages: [
-        { source: "Hesiod's Theogony", text: "Zeus himself from his own head gave birth to bright-eyed Athena." }
+        { source: "Homer's Iliad (Book 1, lines 1-15)", text: "Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans." }
       ],
-      graph_nodes: [{ id: "Zeus", label: "Zeus" }, { id: "Athena", label: "Athena" }]
+      graph_nodes: [{ id: "Zeus", label: "Zeus" }, { id: "Apollo", label: "Apollo" }]
     };
   }
 }
