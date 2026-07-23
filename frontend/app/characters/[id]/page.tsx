@@ -1,46 +1,30 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import Navigation from "@/components/Navigation";
 import { fetchCharacterProfile } from "@/lib/api";
-import { ArrowLeft, GitCommit, BookOpen, ExternalLink, Network, Sparkles, AlertTriangle } from "lucide-react";
+import { ArrowLeft, GitCommit, BookOpen, Network, Sparkles, AlertTriangle } from "lucide-react";
 
-export default function CharacterDetailPage() {
-  const params = useParams();
-  const router = useRouter();
-  const id = params?.id as string || "zeus";
+export async function generateStaticParams() {
+  return [
+    { id: "zeus" },
+    { id: "hera" },
+    { id: "athena" },
+    { id: "odysseus" },
+    { id: "apollo" },
+    { id: "poseidon" },
+    { id: "cronos" },
+    { id: "ares" }
+  ];
+}
 
-  const [data, setData] = useState<any | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+export default async function CharacterDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  let data: any = null;
+  let error: string | null = null;
 
-  useEffect(() => {
-    setLoading(true);
-    setError(null);
-
-    fetchCharacterProfile(id)
-      .then((res) => {
-        setData(res);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message || "Failed to load character profile.");
-        setLoading(false);
-      });
-  }, [id]);
-
-  if (loading) {
-    return (
-      <Navigation>
-        <div className="max-w-4xl mx-auto space-y-6 animate-pulse">
-          <div className="h-8 w-40 bg-slate-800 rounded-lg" />
-          <div className="h-48 bg-slate-900 border border-slate-800 rounded-2xl" />
-          <div className="h-64 bg-slate-900 border border-slate-800 rounded-2xl" />
-        </div>
-      </Navigation>
-    );
+  try {
+    data = await fetchCharacterProfile(id);
+  } catch (err: any) {
+    error = err.message || "Failed to load character profile.";
   }
 
   if (error || !data || !data.profile) {
@@ -61,7 +45,7 @@ export default function CharacterDetailPage() {
     );
   }
 
-  const { profile, relationships, subgraph } = data;
+  const { profile, relationships } = data;
 
   return (
     <Navigation>
