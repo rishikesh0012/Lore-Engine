@@ -1,0 +1,7306 @@
+[
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 13229
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 10181
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Calchas",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 6525
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 3900
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 11522
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Chryses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 6816
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 7962
+  },
+  {
+    "entity_a": "Insolence",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 9331
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Idomeneus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 8417
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ajax",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 8417
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Idomeneus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 8417
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 11845
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 526539
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 516922
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 527454
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 516597
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 516597
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 516597
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 527783
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 527783
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 523974
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 529874
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 531898
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Melanippus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 520353
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Phegeus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 133737
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 533222
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 535505
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 535305
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 535305
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 538830
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ajax",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 538634
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 541775
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 527275
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ajax",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 537809
+  },
+  {
+    "entity_a": "Maris",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thrasymedes",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 551048
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thoas",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 550513
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Automedon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 544822
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 537546
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Automedon",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 540436
+  },
+  {
+    "entity_a": "Mercury",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Eudorus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 542368
+  },
+  {
+    "entity_a": "King Helenus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Paris",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 456282
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 743530
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 743733
+  },
+  {
+    "entity_a": "Dawn",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Oceanus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 658401
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 744047
+  },
+  {
+    "entity_a": "Sarpedon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 559334
+  },
+  {
+    "entity_a": "Glaucus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Teucer",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 562130
+  },
+  {
+    "entity_a": "Ajaxes",
+    "relation_type": "OPPOSES",
+    "entity_b": "Sarpedon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 564749
+  },
+  {
+    "entity_a": "Oileus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 551727
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Sarpedon",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 565095
+  },
+  {
+    "entity_a": "Atymnius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Maris",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 550916
+  },
+  {
+    "entity_a": "Bathycles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Glaucus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 567047
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 558012
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meriones",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 568213
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 563524
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 562430
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Lycia",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 562430
+  },
+  {
+    "entity_a": "Aeneas’s",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meriones",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 568119
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meriones",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 567672
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hades",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 779339
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 750771
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 730618
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 519611
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 731230
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 700891
+  },
+  {
+    "entity_a": "Vulcan",
+    "relation_type": "OPPOSES",
+    "entity_b": "Xanthus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 730345
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Xanthus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 728255
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 728255
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Xanthus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 728255
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 728255
+  },
+  {
+    "entity_a": "Vulcan",
+    "relation_type": "OPPOSES",
+    "entity_b": "Xanthus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 728255
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 728118
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meriones",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 568353
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alexandrus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 751106
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 751106
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 574415
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 574415
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 574297
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 572847
+  },
+  {
+    "entity_a": "Phoebus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 572847
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Phoebus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 578293
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 578293
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 574525
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 574525
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 574525
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojan",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 573080
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 15891
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Agamemnon",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 15891
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 573236
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojan",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 573236
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "the hoar sea",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 19415
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 578619
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Agamemnon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 783957
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 785926
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Phoebus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 785926
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hector",
+    "confidence": 0.99,
+    "source_document": "homer_iliad",
+    "source_location": 579900
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 586626
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 586866
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 731994
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 18399
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 588014
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 588014
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 585962
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Phoebus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 585962
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 585962
+  },
+  {
+    "entity_a": "Glaucus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 590148
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Vulcan",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 731406
+  },
+  {
+    "entity_a": "Machaon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 460389
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 589178
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 21146
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 20940
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ajax",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 588986
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 588986
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 588986
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 588986
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 588986
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Oceanus",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 23037
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 27418
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 28657
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 27518
+  },
+  {
+    "entity_a": "Iris",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 633389
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 29263
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 592418
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 591717
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 31440
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 591240
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Aeneas",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 698418
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 599172
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 598216
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 598216
+  },
+  {
+    "entity_a": "Fleet Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Idomeneus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 596408
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 595113
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 595880
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 595880
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 595880
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Coon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 350566
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 32933
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 34555
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 34866
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 31532
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 33678
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 597654
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 597654
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Apollo",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 600609
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 600609
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 598858
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pylos",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 36650
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 604647
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 604647
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 604647
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Peleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 628659
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Peleus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 628659
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 628659
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 628659
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.4,
+    "source_document": "homer_iliad",
+    "source_location": 628659
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 267516
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hellespont",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 775025
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 756018
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 756018
+  },
+  {
+    "entity_a": "Helen",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 273724
+  },
+  {
+    "entity_a": "Achaean Argos",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Orestes",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 273724
+  },
+  {
+    "entity_a": "Orestes",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 273724
+  },
+  {
+    "entity_a": "Phoebus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 756656
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hades",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 756656
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 756656
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 756656
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Phoenix",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 795643
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 798216
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 798216
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Thebes",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Placus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Thebes",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "earth",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 772200
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 583763
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pylos",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 792505
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 776067
+  },
+  {
+    "entity_a": "King Amarynceus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Buprasium",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 810193
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Buprasium",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 810193
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 770713
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 770713
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Priam",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 770713
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 816270
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Idomeneus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 802902
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ajax",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 802902
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Idomeneus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 802902
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Oileus",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 802902
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Idomeneus",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 802902
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 840547
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 840547
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 840547
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Nestor",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 840547
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Nestor",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 840547
+  },
+  {
+    "entity_a": "Mercury",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 852268
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 805445
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Agamemnon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 824956
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 824956
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 824956
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 857794
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 102219
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Paris",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 102219
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 837865
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 837865
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 828075
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mercury",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 832326
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 725404
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 725404
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 725404
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 481223
+  },
+  {
+    "entity_a": "Aegialeia",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 155438
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Myrmidon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 848737
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Neptune",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 489112
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Neptune",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 480550
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 856813
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 512856
+  },
+  {
+    "entity_a": "Automedon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 608578
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thoas",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 504507
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 505396
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 505396
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 155329
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 766067
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 766067
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "ships",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 766067
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 766067
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Neleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 510610
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Tenedos",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 413844
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 509692
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ilioneus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 487840
+  },
+  {
+    "entity_a": "Acamas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 487840
+  },
+  {
+    "entity_a": "Mercury",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Ilioneus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 487840
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Saturn",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 51900
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 51900
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojans",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 51900
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Idomeneus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 616138
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 616138
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 616138
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "sea-shore",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 660315
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Demoleon",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 702830
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 832779
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Helenus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 185704
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 185704
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mulius",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 707614
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Neptune",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 699051
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Pollux",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 92166
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Saturn",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 720052
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 720052
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Saturn",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 720052
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 664184
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Jupiter",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Machaon",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Machaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Jupiter",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.5,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jupiter",
+    "confidence": 0.4,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Nestor",
+    "confidence": 0.5,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Machaon",
+    "confidence": 0.3,
+    "source_document": "homer_iliad",
+    "source_location": 460261
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 463111
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 722663
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 722663
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 722663
+  },
+  {
+    "entity_a": "Phoenix",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minos",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hercules",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Semele",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Bacchus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Minos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Rhadamanthus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Thebes",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Thebes",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Hercules",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Thebes",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Bacchus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Thebes",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Minos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Rhadamanthus",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Phoenix",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Rhadamanthus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hercules",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Semele",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Bacchus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Hercules",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Bacchus",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Minos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Rhadamanthus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Semele",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Semele",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Ceres",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Leto",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Phoenix",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minos",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Thebes",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 478427
+  },
+  {
+    "entity_a": "Meriones",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 621934
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Apollo",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 761746
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 761746
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 761746
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 580218
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 103200
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Helen",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 103200
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Peleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 720282
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Oileus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 485320
+  },
+  {
+    "entity_a": "Enops",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 485320
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 414304
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 414304
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 414304
+  },
+  {
+    "entity_a": "Adrestus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Amphius",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 77551
+  },
+  {
+    "entity_a": "Adrestus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Apaesus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 77551
+  },
+  {
+    "entity_a": "Amphius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Apaesus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 77551
+  },
+  {
+    "entity_a": "Adrestus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pityeia",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 77551
+  },
+  {
+    "entity_a": "Amphius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pityeia",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 77551
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 310506
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 764442
+  },
+  {
+    "entity_a": "Echius",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Mecisteus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 253996
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 253996
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achaeans",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 253996
+  },
+  {
+    "entity_a": "Alastor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Mecisteus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 253996
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojans",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 253996
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 307680
+  },
+  {
+    "entity_a": "Meriones",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 307680
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 307680
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 260976
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 260976
+  },
+  {
+    "entity_a": "Phradmon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Tydeus",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 249785
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Peleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 790998
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 740738
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 104286
+  },
+  {
+    "entity_a": "Venus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Alexandrus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 104286
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 104286
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 104286
+  },
+  {
+    "entity_a": "Venus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 104286
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Agamemnon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 290096
+  },
+  {
+    "entity_a": "Cleopatra",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Meleager",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 296899
+  },
+  {
+    "entity_a": "Meleager",
+    "relation_type": "OPPOSES",
+    "entity_b": "Erinys",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 296899
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Erebus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 296899
+  },
+  {
+    "entity_a": "Meleager",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Hades",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 296899
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Machaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 373395
+  },
+  {
+    "entity_a": "Great Ajax",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Telamon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 405390
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Telamon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 405390
+  },
+  {
+    "entity_a": "Great Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 405390
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Great Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 405390
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 325226
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 230774
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 230774
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 230774
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 472658
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Venus",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 472658
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 323938
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 323938
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Oeneus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 466866
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Oeneus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 466866
+  },
+  {
+    "entity_a": "Automedon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Peleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 582718
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 316308
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 248634
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 365425
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Machaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 365425
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Machaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 365425
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 130278
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pergamus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 130278
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Thebes",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Portheus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Melas",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pleuron",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Agrius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pleuron",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Melas",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Agrius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Calydon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Melas",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 466580
+  },
+  {
+    "entity_a": "Ida",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Iris",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 346920
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 480782
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 480782
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 854773
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 475093
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 739616
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 473439
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Juno",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 473439
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Vulcan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 473439
+  },
+  {
+    "entity_a": "Oceanus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 473439
+  },
+  {
+    "entity_a": "Astynous",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Astynous",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Polyidus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Eurydamas",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Polyidus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Eurydamas",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Abas",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Abas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Polyidus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Abas",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Polyidus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 141152
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Apollo",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 757242
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 757242
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 757242
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ajaxes",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Meriones",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Ajaxes",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "PARENT_OF",
+    "entity_b": "son of Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 316779
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 320384
+  },
+  {
+    "entity_a": "Acamas",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Eussorus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 182167
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Telamon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 182167
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Acamas",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 182167
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Podes",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 614043
+  },
+  {
+    "entity_a": "Bellerophon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Lycia",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 190807
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 755680
+  },
+  {
+    "entity_a": "Dardanian",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 755680
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 330848
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 369375
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Telamon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 369375
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alexandrus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 369375
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 369375
+  },
+  {
+    "entity_a": "Paris",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 229503
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 613131
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 613131
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 613131
+  },
+  {
+    "entity_a": "Alcimedon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Automedon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 608200
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 370489
+  },
+  {
+    "entity_a": "Rhea",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Rhea",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hades",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hades",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Hades",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Jove",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Rhea",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Saturn",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 499826
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thersites",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 46674
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thersites",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 46674
+  },
+  {
+    "entity_a": "Vulcan",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 506664
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mydon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Oeneus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ophelestes",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thrasius",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thersilochus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Astypylus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mnesus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 721514
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 441989
+  },
+  {
+    "entity_a": "Archeptolemus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 242771
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 242771
+  },
+  {
+    "entity_a": "Oileus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Medon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 72099
+  },
+  {
+    "entity_a": "Aesculapius",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Podalirius",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 72099
+  },
+  {
+    "entity_a": "Aesculapius",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Machaon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 72099
+  },
+  {
+    "entity_a": "Oileus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Medon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 72099
+  },
+  {
+    "entity_a": "Oileus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Rhene",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 72099
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Helen",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 365047
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Machaon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 365047
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Machaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 365047
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 365047
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Idomeneus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 365047
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hades",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 204446
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 319068
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 319068
+  },
+  {
+    "entity_a": "Acamas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Promachus the Boeotian",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 487248
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 701616
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 701616
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 701616
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 701616
+  },
+  {
+    "entity_a": "Phoebus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 701616
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 701616
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 683741
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 683741
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 198275
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 198275
+  },
+  {
+    "entity_a": "Laodocus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Lycaon",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 108021
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Laodocus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 108021
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Lycaon",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 108021
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Lycaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 108021
+  },
+  {
+    "entity_a": "Laodocus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 108021
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Saturn",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 720637
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Asteropaeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 720637
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Oceanus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 720637
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ida",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 615145
+  },
+  {
+    "entity_a": "Polydamas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Peneleos",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 615145
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 302628
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Agamemnon",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 302628
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Vulcan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 631425
+  },
+  {
+    "entity_a": "Bias",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Laogonus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 706743
+  },
+  {
+    "entity_a": "Bias",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Dardanus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 706743
+  },
+  {
+    "entity_a": "Alastor",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Tros",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 706743
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Laogonus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 706743
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Dardanus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 706743
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Tros",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 706743
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 243665
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 243665
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.2,
+    "source_document": "homer_iliad",
+    "source_location": 243665
+  },
+  {
+    "entity_a": "Ajaxes",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Mars",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 240224
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ajaxes",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 240224
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Achilles",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 829231
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alexandrus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 199358
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Helen",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 199358
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Helen",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 199358
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 757469
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 757469
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 255232
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 255232
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 255232
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 255232
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 47020
+  },
+  {
+    "entity_a": "Drop",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 47020
+  },
+  {
+    "entity_a": "Socus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 360877
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Sthenelus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Eurymedon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Eurymedon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Sthenelus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Sthenelus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Sthenelus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Eurymedon",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Eurymedon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Tydeus",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 242163
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 259858
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 259858
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 259858
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 835544
+  },
+  {
+    "entity_a": "Castianeira",
+    "relation_type": "PARENT_OF",
+    "entity_b": "the passage's subject (implied to be the son of Castianeira)",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 252429
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "the passage's subject (implied to be the one whose arrow was turned aside by Apollo)",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 252429
+  },
+  {
+    "entity_a": "Archeptolemus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 252429
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 280232
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Agamemnon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 280232
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Phthia",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 280232
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 452975
+  },
+  {
+    "entity_a": "Oileus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 452975
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 278665
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 278665
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Phoenix",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 278665
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 278665
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Talthybius",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Iris",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Helicaon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Helicaon",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Laodice",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Laodice",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Helen",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Priam",
+    "confidence": 0.5,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Iris",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Helen",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 86538
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 243401
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 243401
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 243401
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 243401
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 215977
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 215977
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Eetion",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 276542
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 237779
+  },
+  {
+    "entity_a": "Meleager",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Cleopatra",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 296168
+  },
+  {
+    "entity_a": "Althaea",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meleager",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 296168
+  },
+  {
+    "entity_a": "Marpessa",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Cleopatra",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 296168
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Aeneas",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Phoebus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Aeneas",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Phoebus",
+    "confidence": 0.5,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Aeneas",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 687885
+  },
+  {
+    "entity_a": "Azeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Actor",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 60925
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ascalaphus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 60925
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ialmenus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 60925
+  },
+  {
+    "entity_a": "Azeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ascalaphus",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 60925
+  },
+  {
+    "entity_a": "Azeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ialmenus",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 60925
+  },
+  {
+    "entity_a": "Aspledon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Minyas",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60925
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Tydeus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 264160
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Damasus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 394818
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 322721
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 322721
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 322721
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Neptune",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 432039
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 432039
+  },
+  {
+    "entity_a": "Thebes",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Tydeus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 319595
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 319595
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Aeneas",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 696338
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 696338
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hades",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 696338
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Peleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 696338
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Neptune",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 696338
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 247261
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 247261
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 247261
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Lycaon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 746811
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 859443
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 859760
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 869968
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 701940
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Polydamas",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 395715
+  },
+  {
+    "entity_a": "Alcimedon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 608752
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Polydamas",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 389616
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Automedon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 679216
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Machaon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 370335
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 370335
+  },
+  {
+    "entity_a": "Machaon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 370335
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Jove",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 500034
+  },
+  {
+    "entity_a": "Helen",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 869517
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Helen",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 869517
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 765089
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Paris",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 765089
+  },
+  {
+    "entity_a": "Paris",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Phoebus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 765089
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Phoebus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 765089
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 765089
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 330646
+  },
+  {
+    "entity_a": "Ajaxes",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 621073
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 621073
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 621073
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 0.99,
+    "source_document": "homer_iliad",
+    "source_location": 815297
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 384739
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 828695
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 459315
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 459315
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 825073
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Agamemnon",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 825073
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 825073
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 825073
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Agamemnon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 825073
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Argives",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 814796
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Telamon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 74414
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 74414
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 74414
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 74414
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ajax",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 74414
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 613010
+  },
+  {
+    "entity_a": "Phoenix",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 613010
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Troy",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 613010
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 315178
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 315178
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 732265
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 311518
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Antimachus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 343384
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alexandrus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 343384
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 36397
+  },
+  {
+    "entity_a": "Dawn",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Olympus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 36397
+  },
+  {
+    "entity_a": "Dawn",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 36397
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 36397
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pylos",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 36397
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pylos",
+    "confidence": 0.5,
+    "source_document": "homer_iliad",
+    "source_location": 36397
+  },
+  {
+    "entity_a": "Ceos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Euphemus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 78538
+  },
+  {
+    "entity_a": "Amydon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pyraechmes",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 78538
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 627971
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 211711
+  },
+  {
+    "entity_a": "Charis",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Thetis",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 645052
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Polydamas",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 397954
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 633590
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 633590
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 633590
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 633590
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Eurystheus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 664672
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 664672
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Argives",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 664672
+  },
+  {
+    "entity_a": "Diana",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 738033
+  },
+  {
+    "entity_a": "Idaeus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pergamus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Idaeus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Cassandra",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pergamus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Cassandra",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Pergamus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Priam",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 865955
+  },
+  {
+    "entity_a": "Diocles",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Crethon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 162838
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Crethon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 162838
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diocles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 162838
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ajax",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 166095
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 166095
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Idomeneus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 116628
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 116628
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 697776
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 697776
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Aeneas",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 697776
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Aeneas",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 697776
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Peleus",
+    "confidence": 0.5,
+    "source_document": "homer_iliad",
+    "source_location": 697776
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.4,
+    "source_document": "homer_iliad",
+    "source_location": 697776
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Saturn",
+    "confidence": 0.0,
+    "source_document": "homer_iliad",
+    "source_location": 53585
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 112932
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 120603
+  },
+  {
+    "entity_a": "Forthwith",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 618356
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 618356
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 82095
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 82095
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alexandrus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 82095
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Atreus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 82095
+  },
+  {
+    "entity_a": "Cassandra",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pergamus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 866080
+  },
+  {
+    "entity_a": "Cassandra",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 866080
+  },
+  {
+    "entity_a": "Cassandra",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Venus",
+    "confidence": 0.4,
+    "source_document": "homer_iliad",
+    "source_location": 866080
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pergamus",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 866080
+  },
+  {
+    "entity_a": "Antea",
+    "relation_type": "OPPOSES",
+    "entity_b": "Bellerophon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 190494
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Atreus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 802752
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Neptune",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 492747
+  },
+  {
+    "entity_a": "Iris",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 492747
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 492747
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 492747
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Neptune",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 492747
+  },
+  {
+    "entity_a": "Iris",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Neptune",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 492747
+  },
+  {
+    "entity_a": "Helen",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 52313
+  },
+  {
+    "entity_a": "Automedon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 606226
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 302583
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 149355
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Venus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Venus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Venus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "AEneas",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 132582
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 479459
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 479459
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Polydamas",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 388942
+  },
+  {
+    "entity_a": "Clonius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Eteonus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Clonius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hyria",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Clonius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Schoenus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Clonius",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Mycalessus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Arcesilaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Eteonus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Arcesilaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hyria",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Arcesilaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Schoenus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Arcesilaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Mycalessus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Arcesilaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Aulis",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Aulis",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Clonius",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 60116
+  },
+  {
+    "entity_a": "Eurystheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 665202
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Eurystheus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 665202
+  },
+  {
+    "entity_a": "Ilithuia",
+    "relation_type": "OPPOSES",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 663563
+  },
+  {
+    "entity_a": "Helen",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Menelaus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 103293
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 671613
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Earth",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 671613
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Sun",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 671613
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Briseis",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 671613
+  },
+  {
+    "entity_a": "Mercury",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 864799
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 864799
+  },
+  {
+    "entity_a": "Mercury",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Achilles",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 864799
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 668961
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 213726
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 221496
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 221496
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 221496
+  },
+  {
+    "entity_a": "Hippolochus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Bellerophon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Sarpedon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Isander",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Bellerophon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ephyra",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Bellerophon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Lycia",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Bellerophon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Diana",
+    "relation_type": "OPPOSES",
+    "entity_b": "Bellerophon",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Bellerophon",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 192757
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Apollo",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 797328
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Tydeus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 797328
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Phoebus Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Phoebus Apollo",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Hercules",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "earth-barrow",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Pallas Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojans",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Phoebus Apollo",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 689173
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 258753
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 258753
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 258753
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Paris",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 82347
+  },
+  {
+    "entity_a": "Ajaxes",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 414772
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 676686
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "ambrosia",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 676686
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 676686
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "ambrosia",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 676686
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 676686
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ajaxes",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 623361
+  },
+  {
+    "entity_a": "Ajaxes",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 623361
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 300089
+  },
+  {
+    "entity_a": "Laertes",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ulysses",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 300089
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 300089
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 146243
+  },
+  {
+    "entity_a": "Lycaon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Pandarus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 146243
+  },
+  {
+    "entity_a": "Anchises",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Aeneas",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 146243
+  },
+  {
+    "entity_a": "Venus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Aeneas",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 146243
+  },
+  {
+    "entity_a": "Capaneus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Sthenelus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 146243
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thebe",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 204105
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.4,
+    "source_document": "homer_iliad",
+    "source_location": 204105
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Medesicaste",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 422114
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Oileus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 72016
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 283073
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 283073
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 795350
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 795350
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Menelaus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 795350
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 795350
+  },
+  {
+    "entity_a": "Meriones",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 795350
+  },
+  {
+    "entity_a": "Ceres",
+    "relation_type": "OPPOSES",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 478671
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "OPPOSES",
+    "entity_b": "Juno",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 478671
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 482270
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Neptune",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 482270
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojan",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 482270
+  },
+  {
+    "entity_a": "Acamas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Promachus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 487402
+  },
+  {
+    "entity_a": "Ida",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 476106
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Priam",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Priam",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hector",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojan",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Ida",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Trojan",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 347669
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Helen",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 228996
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hades",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 581927
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 5025
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hellespont",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 502135
+  },
+  {
+    "entity_a": "Bacchus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Lycurgus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 188861
+  },
+  {
+    "entity_a": "Thetis",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Bacchus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 188861
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Idomeneus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 615950
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 615950
+  },
+  {
+    "entity_a": "Idomeneus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 615950
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Teucer",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 515170
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 515170
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 258939
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 258939
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 829771
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 829771
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 177340
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 177340
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Mars",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 177340
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Oceanus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 681529
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ajax",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 820513
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 820513
+  },
+  {
+    "entity_a": "Asteropaeus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 820513
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 820513
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Argives",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 820513
+  },
+  {
+    "entity_a": "Asteropaeus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ajax",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 820513
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Troy",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 633869
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Aeneas",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 791878
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 791878
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "OPPOSES",
+    "entity_b": "Diomed",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 791878
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 791878
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Menelaus",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 791878
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Agamemnon",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 791878
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 512942
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 315259
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Vulcan",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 677367
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Venus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 177155
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 177155
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Meriones",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 824354
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 769107
+  },
+  {
+    "entity_a": "Calydon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Meleager",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 297375
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Menelaus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 84825
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Helen",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 84825
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 354514
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 354514
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Thymbraeus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 354514
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 112332
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "OPPOSES",
+    "entity_b": "Echemmon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 141817
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Tydeus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 145533
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Coeranus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Coeranus",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alastor",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Alastor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Noemon",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Noemon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 169442
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Hector",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 214446
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hellespont",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 214446
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ilithuiae",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 664465
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Alcmena",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 664465
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 664465
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 664465
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "OPPOSES",
+    "entity_b": "Juno",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 664465
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Helen",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 197570
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Sidon",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 197570
+  },
+  {
+    "entity_a": "Alexandrus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Apisaon",
+    "confidence": 0.75,
+    "source_document": "homer_iliad",
+    "source_location": 369285
+  },
+  {
+    "entity_a": "Apisaon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 369285
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 334406
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 211459
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "OPPOSES",
+    "entity_b": "Argives",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 211459
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pergamus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 211459
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Olympus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 211459
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Trojans",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 211459
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Apollo",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 211459
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Mars",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 165768
+  },
+  {
+    "entity_a": "Vulcan",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Jove",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 506588
+  },
+  {
+    "entity_a": "Phoebus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 506588
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 506588
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Phoebus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 506588
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "gore",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 709083
+  },
+  {
+    "entity_a": "Dulichium",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Phyleus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 66785
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Mars",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 66785
+  },
+  {
+    "entity_a": "Phyleus",
+    "relation_type": "OPPOSES",
+    "entity_b": "his father",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 66785
+  },
+  {
+    "entity_a": "Dulichium",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Jove",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 66785
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ida",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 342360
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 342360
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ida",
+    "confidence": 0.4,
+    "source_document": "homer_iliad",
+    "source_location": 342360
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 275221
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Agamemnon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 275221
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 275221
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Pylos",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 379136
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Nestor",
+    "confidence": 0.7,
+    "source_document": "homer_iliad",
+    "source_location": 379136
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Jove",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 379136
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 260503
+  },
+  {
+    "entity_a": "Diomed",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Juno",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 175124
+  },
+  {
+    "entity_a": "Telamon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ajax",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 406221
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Sarpedon",
+    "confidence": 0.85,
+    "source_document": "homer_iliad",
+    "source_location": 406221
+  },
+  {
+    "entity_a": "Enyo",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Mars",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 165302
+  },
+  {
+    "entity_a": "Hector",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Mars",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 165302
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 373716
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 373716
+  },
+  {
+    "entity_a": "Tydeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Diomed",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 373716
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 373716
+  },
+  {
+    "entity_a": "Atreus",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Mercury",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 39341
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Atreus",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 39341
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 581044
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pyrasus",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 70289
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Antrum",
+    "confidence": 0.8,
+    "source_document": "homer_iliad",
+    "source_location": 70289
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ceres",
+    "confidence": 0.6,
+    "source_document": "homer_iliad",
+    "source_location": 70289
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Juno",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 643743
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Juno",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 643743
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Juno",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 643743
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Periphas",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 178202
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "OPPOSES",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 178202
+  },
+  {
+    "entity_a": "Achilles",
+    "relation_type": "OPPOSES",
+    "entity_b": "Hector",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 762543
+  },
+  {
+    "entity_a": "Mars",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Minerva",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 134697
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "OPPOSES",
+    "entity_b": "Niobe",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 860682
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "OPPOSES",
+    "entity_b": "Niobe",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 860682
+  },
+  {
+    "entity_a": "Diana",
+    "relation_type": "OPPOSES",
+    "entity_b": "Niobe",
+    "confidence": 0.95,
+    "source_document": "homer_iliad",
+    "source_location": 860682
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 91794
+  },
+  {
+    "entity_a": "Ajax",
+    "relation_type": "OPPOSES",
+    "entity_b": "Priam",
+    "confidence": 0.9,
+    "source_document": "homer_iliad",
+    "source_location": 91794
+  },
+  {
+    "entity_a": "Lycia",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Xanthus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 191198
+  },
+  {
+    "entity_a": "Bellerophon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Lycia",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 191198
+  },
+  {
+    "entity_a": "Bellerophon",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Xanthus",
+    "confidence": 1.0,
+    "source_document": "homer_iliad",
+    "source_location": 191198
+  }
+]

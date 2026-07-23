@@ -1,0 +1,10 @@
+[
+  {
+    "entity_a": "McKay",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Philadelphia",
+    "confidence": 0.95,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 94
+  }
+]

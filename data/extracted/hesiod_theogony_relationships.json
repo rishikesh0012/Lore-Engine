@@ -1,0 +1,1490 @@
+[
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 2891
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pieria",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 2891
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 2732
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 3915
+  },
+  {
+    "entity_a": "Crius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Rhea",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Oceanus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Phoebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Themis",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Oceanus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Phoebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Crius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Cronos",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Themis",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Iapetus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Rhea",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Crius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Oceanus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Rhea",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Crius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Phoebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Crius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Iapetus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Crius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Themis",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Cronos",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Oceanus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Phoebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Oceanus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Phoebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Themis",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Iapetus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Crius",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 7300
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Melpomene",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Urania",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Melpomene",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Urania",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Euterpe",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Melpomene",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Melpomene",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Polyhymnia",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Erato",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Euterpe",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Euterpe",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Urania",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Euterpe",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Polyhymnia",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Euterpe",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Polyhymnia",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Erato",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Erato",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Urania",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Erato",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Polyhymnia",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Polyhymnia",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Urania",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Erato",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Melpomene",
+    "confidence": 0.99,
+    "source_document": "hesiod_theogony",
+    "source_location": 4139
+  },
+  {
+    "entity_a": "Briareos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Gyes",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 8031
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Briareos",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 8031
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Gyes",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 8031
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Meliae",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 9928
+  },
+  {
+    "entity_a": "Fates",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Woe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 11615
+  },
+  {
+    "entity_a": "Clotho",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Woe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 11615
+  },
+  {
+    "entity_a": "Cytherea",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Eros",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 10672
+  },
+  {
+    "entity_a": "Aphrodite",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Eros",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 10672
+  },
+  {
+    "entity_a": "Aphrodite",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Desire",
+    "confidence": 0.85,
+    "source_document": "hesiod_theogony",
+    "source_location": 10672
+  },
+  {
+    "entity_a": "Cytherea",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Desire",
+    "confidence": 0.85,
+    "source_document": "hesiod_theogony",
+    "source_location": 10672
+  },
+  {
+    "entity_a": "Deceit",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Friendship",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 12120
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Thaumas",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 12810
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ceto",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 12810
+  },
+  {
+    "entity_a": "Ceto",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Thaumas",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 12810
+  },
+  {
+    "entity_a": "Thaumas",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Iris",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 14063
+  },
+  {
+    "entity_a": "Enyo",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Pemphredo",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 14371
+  },
+  {
+    "entity_a": "Cerberus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Hades",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 16428
+  },
+  {
+    "entity_a": "Athene",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Heracles",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 16720
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Heracles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 16720
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "OPPOSES",
+    "entity_b": "Heracles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 16720
+  },
+  {
+    "entity_a": "Athene",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Heracles",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 16879
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Heracles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 16879
+  },
+  {
+    "entity_a": "Typhaon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Cerberus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 16299
+  },
+  {
+    "entity_a": "Eos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Helius",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Eos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Moon",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Dawn",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Moon",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Helius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Selene",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Dawn",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Selene",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Helius",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Moon",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Dawn",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Helius",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Eos",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Selene",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 19631
+  },
+  {
+    "entity_a": "Boreas",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Zephyrus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 20014
+  },
+  {
+    "entity_a": "Styx",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 20510
+  },
+  {
+    "entity_a": "Ocean",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Styx",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 20308
+  },
+  {
+    "entity_a": "Coeus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Phoebe",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 21473
+  },
+  {
+    "entity_a": "Styx",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 21129
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 22470
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 21837
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 24432
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 24910
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 25252
+  },
+  {
+    "entity_a": "Rhea",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 25404
+  },
+  {
+    "entity_a": "Rhea",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 24634
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Rhea",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 25528
+  },
+  {
+    "entity_a": "Pytho",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Parnassus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 26584
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 26248
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "OPPOSES",
+    "entity_b": "Earth",
+    "confidence": 0.7,
+    "source_document": "hesiod_theogony",
+    "source_location": 26248
+  },
+  {
+    "entity_a": "Atlas",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Epimetheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27213
+  },
+  {
+    "entity_a": "Epimetheus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Prometheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27213
+  },
+  {
+    "entity_a": "Atlas",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Prometheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27213
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Atlas",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27105
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Epimetheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27105
+  },
+  {
+    "entity_a": "Clymene",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Iapetus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27105
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Prometheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27105
+  },
+  {
+    "entity_a": "Clymene",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Epimetheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27105
+  },
+  {
+    "entity_a": "Clymene",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Atlas",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27105
+  },
+  {
+    "entity_a": "Atlas",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Zeus",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 27508
+  },
+  {
+    "entity_a": "Atlas",
+    "relation_type": "CAUSED_BY",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 27674
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Prometheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 27674
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 28495
+  },
+  {
+    "entity_a": "Prometheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 28495
+  },
+  {
+    "entity_a": "Prometheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 28690
+  },
+  {
+    "entity_a": "Prometheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 29301
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 30496
+  },
+  {
+    "entity_a": "Prometheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 29231
+  },
+  {
+    "entity_a": "Iapetus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Prometheus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 33013
+  },
+  {
+    "entity_a": "Prometheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 33013
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Rhea",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 33669
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Rhea",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 33969
+  },
+  {
+    "entity_a": "Cronos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Titan",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 33969
+  },
+  {
+    "entity_a": "Earth",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Titan",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 34433
+  },
+  {
+    "entity_a": "Poseidon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Titan",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 39261
+  },
+  {
+    "entity_a": "Poseidon",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.7,
+    "source_document": "hesiod_theogony",
+    "source_location": 39261
+  },
+  {
+    "entity_a": "Titan",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.85,
+    "source_document": "hesiod_theogony",
+    "source_location": 39261
+  },
+  {
+    "entity_a": "Titan",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.75,
+    "source_document": "hesiod_theogony",
+    "source_location": 35795
+  },
+  {
+    "entity_a": "Obriareus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 39524
+  },
+  {
+    "entity_a": "Gyes",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 39524
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Persephone",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 41297
+  },
+  {
+    "entity_a": "Hades",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Persephone",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 41501
+  },
+  {
+    "entity_a": "Typhoeus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 45983
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Typhoeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 46187
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Athene",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 47852
+  },
+  {
+    "entity_a": "Demeter",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Persephone",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49098
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Persephone",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 49098
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ares",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49595
+  },
+  {
+    "entity_a": "Ares",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Eileithyia",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49595
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Eileithyia",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49595
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49769
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 50160
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hephaestus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 50160
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49971
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hephaestus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 49971
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Artemis",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Apollo",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Artemis",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Apollo",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Leto",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Eileithyia",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ares",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Ares",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 49440
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hephaestus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 50214
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 50214
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hephaestus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 50214
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 50369
+  },
+  {
+    "entity_a": "Metis",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 50369
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Metis",
+    "confidence": 0.7,
+    "source_document": "hesiod_theogony",
+    "source_location": 50464
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Trito",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 50522
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Athene",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 50522
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Athena",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 51043
+  },
+  {
+    "entity_a": "Ares",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Harmonia",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 51500
+  },
+  {
+    "entity_a": "Amphitrite",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Earth-Shaker",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 51288
+  },
+  {
+    "entity_a": "Amphitrite",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Triton",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 51288
+  },
+  {
+    "entity_a": "Earth-Shaker",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Triton",
+    "confidence": 1.0,
+    "source_document": "hesiod_theogony",
+    "source_location": 51288
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Zeus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52084
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Heracles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52084
+  },
+  {
+    "entity_a": "Alcmena",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Heracles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52084
+  },
+  {
+    "entity_a": "Aglaea",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Hephaestus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52187
+  },
+  {
+    "entity_a": "Heracles",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Hebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52461
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52461
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Hera",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52461
+  },
+  {
+    "entity_a": "Hera",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hebe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52461
+  },
+  {
+    "entity_a": "Atlas",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Maia",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 51759
+  },
+  {
+    "entity_a": "Maia",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hermes",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 51759
+  },
+  {
+    "entity_a": "Zeus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Hermes",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 51759
+  },
+  {
+    "entity_a": "Helios",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Perseis",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 52781
+  },
+  {
+    "entity_a": "Idyia",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Perseis",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52781
+  },
+  {
+    "entity_a": "Dionysus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Ariadne",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52291
+  },
+  {
+    "entity_a": "Minos",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Ariadne",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 52291
+  },
+  {
+    "entity_a": "Heracles",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Erythea",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 53956
+  },
+  {
+    "entity_a": "Harmonia",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Autonoe",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 53752
+  },
+  {
+    "entity_a": "Harmonia",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Agave",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 53752
+  },
+  {
+    "entity_a": "Aphrodite",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Harmonia",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 53752
+  },
+  {
+    "entity_a": "Agave",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Autonoe",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 53752
+  },
+  {
+    "entity_a": "Philyra",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Cheiron",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 55041
+  },
+  {
+    "entity_a": "Aeneas",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ida",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 55517
+  },
+  {
+    "entity_a": "Cytherea",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Aeneas",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 55517
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Thetis",
+    "confidence": 0.85,
+    "source_document": "hesiod_theogony",
+    "source_location": 55381
+  },
+  {
+    "entity_a": "Thetis",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Achilles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 55381
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 55381
+  },
+  {
+    "entity_a": "Thaumas",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Iris",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 14063
+  },
+  {
+    "entity_a": "Prometheus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "hesiod_theogony",
+    "source_location": 28690
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Thetis",
+    "confidence": 0.85,
+    "source_document": "hesiod_theogony",
+    "source_location": 55381
+  },
+  {
+    "entity_a": "Thetis",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Achilles",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 55381
+  },
+  {
+    "entity_a": "Peleus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Achilles",
+    "confidence": 0.8,
+    "source_document": "hesiod_theogony",
+    "source_location": 55381
+  },
+  {
+    "entity_a": "Odysseus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Latinus",
+    "confidence": 0.95,
+    "source_document": "hesiod_theogony",
+    "source_location": 55683
+  }
+]

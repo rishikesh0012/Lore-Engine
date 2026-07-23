@@ -1,0 +1,83 @@
+services:
+  backend:
+    build:
+      context: ./
+      dockerfile: backend/Dockerfile
+    container_name: lore_engine_backend
+    ports:
+      - "8002:8000"
+    environment:
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY}
+      - QDRANT_URL=http://qdrant:6333
+      - QDRANT_API_KEY=${QDRANT_API_KEY}
+      - NEO4J_URI=bolt://neo4j:7687
+      - NEO4J_USER=${NEO4J_USER:-neo4j}
+      - NEO4J_PASSWORD=${NEO4J_PASSWORD:-password}
+      - DATABASE_URL=${DATABASE_URL}
+    depends_on:
+      - neo4j
+      - qdrant
+      - postgres
+    networks:
+      - lore_net
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: lore_engine_frontend
+    ports:
+      - "3005:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8002/api
+    depends_on:
+      - backend
+    networks:
+      - lore_net
+
+  neo4j:
+    image: neo4j:5.20.0
+    container_name: lore_engine_neo4j
+    ports:
+      - "7475:7474"
+      - "7688:7687"
+    environment:
+      - NEO4J_AUTH=${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:-password}
+    volumes:
+      - neo4j_data:/data
+    networks:
+      - lore_net
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: lore_engine_qdrant
+    ports:
+      - "6337:6333"
+      - "6338:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    networks:
+      - lore_net
+
+  postgres:
+    image: postgres:15
+    container_name: lore_engine_postgres
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=lore
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=lore_engine
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    networks:
+      - lore_net
+
+networks:
+  lore_net:
+    driver: bridge
+
+volumes:
+  neo4j_data:
+  qdrant_data:
+  pg_data:

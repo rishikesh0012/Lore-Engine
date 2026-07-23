@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Python & Virtualenv
+__pycache__/
+*.pyc
+.env
+.env*.local
+*.log
+.checkpoint_*.jsonl
+
+# OS files
+.DS_Store
+*.pem
+
+# Vercel
+.vercel

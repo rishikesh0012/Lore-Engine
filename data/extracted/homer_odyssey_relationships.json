@@ -1,0 +1,426 @@
+[
+  {
+    "entity_a": "Nausicaa",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Trapani",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 1450
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Orestes",
+    "confidence": 1.0,
+    "source_document": "homer_odyssey",
+    "source_location": 5582
+  },
+  {
+    "entity_a": "Aegisthus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Orestes",
+    "confidence": 0.85,
+    "source_document": "homer_odyssey",
+    "source_location": 6333
+  },
+  {
+    "entity_a": "Poseidon",
+    "relation_type": "OPPOSES",
+    "entity_b": "Odysseus",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 4909
+  },
+  {
+    "entity_a": "Odysseus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ithaca",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 4909
+  },
+  {
+    "entity_a": "Athene",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Odysseus",
+    "confidence": 0.85,
+    "source_document": "homer_odyssey",
+    "source_location": 6596
+  },
+  {
+    "entity_a": "Athene",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Hermes",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 6467
+  },
+  {
+    "entity_a": "Athene",
+    "relation_type": "OPPOSES",
+    "entity_b": "Aegisthus",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 6467
+  },
+  {
+    "entity_a": "Odysseus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ithaca",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 7175
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Odysseus",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 7490
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 7490
+  },
+  {
+    "entity_a": "Odysseus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Trojan",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 7490
+  },
+  {
+    "entity_a": "Odysseus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Zeus",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 7490
+  },
+  {
+    "entity_a": "A. T. Bartholomew",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Cambridge",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 14913
+  },
+  {
+    "entity_a": "Donald S. Robertson",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Cambridge",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 14913
+  },
+  {
+    "entity_a": "HENRY FESTING JONES",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "VALE",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 15730
+  },
+  {
+    "entity_a": "HENRY FESTING JONES",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "W.9",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 15730
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 16510
+  },
+  {
+    "entity_a": "H. R. Robertson",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Bloomsbury",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 15415
+  },
+  {
+    "entity_a": "Aegisthus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Orestes",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 17421
+  },
+  {
+    "entity_a": "Aegisthus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 17421
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Orestes",
+    "confidence": 1.0,
+    "source_document": "homer_odyssey",
+    "source_location": 17421
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Neptune",
+    "confidence": 0.85,
+    "source_document": "homer_odyssey",
+    "source_location": 17085
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 18054
+  },
+  {
+    "entity_a": "Polyphemus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 19088
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 19088
+  },
+  {
+    "entity_a": "Aegisthus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Orestes",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 17636
+  },
+  {
+    "entity_a": "Aegisthus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Agamemnon",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 17636
+  },
+  {
+    "entity_a": "Agamemnon",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Orestes",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 17636
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 19555
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Neptune",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 19555
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 19366
+  },
+  {
+    "entity_a": "Thoosa",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Polyphemus",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 19238
+  },
+  {
+    "entity_a": "Mentes",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ithaca",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 19966
+  },
+  {
+    "entity_a": "Argives",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.85,
+    "source_document": "homer_odyssey",
+    "source_location": 25880
+  },
+  {
+    "entity_a": "Rheithron",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Neritum",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 24750
+  },
+  {
+    "entity_a": "Menelaus",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Sparta",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 29653
+  },
+  {
+    "entity_a": "Nestor",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Pylos",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 29653
+  },
+  {
+    "entity_a": "Icarius",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Penelope",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 31832
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Troy",
+    "confidence": 0.85,
+    "source_document": "homer_odyssey",
+    "source_location": 32944
+  },
+  {
+    "entity_a": "Minerva",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 28129
+  },
+  {
+    "entity_a": "Antiphus",
+    "relation_type": "SIBLING_OF",
+    "entity_b": "Eurynomus",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 38190
+  },
+  {
+    "entity_a": "Antiphus",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 38190
+  },
+  {
+    "entity_a": "Ops",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Euryclea",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 36236
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ithaca",
+    "confidence": 0.75,
+    "source_document": "homer_odyssey",
+    "source_location": 45483
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ithaca",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 48659
+  },
+  {
+    "entity_a": "Ulysses",
+    "relation_type": "LOCATED_AT",
+    "entity_b": "Ithaca",
+    "confidence": 0.8,
+    "source_document": "homer_odyssey",
+    "source_location": 45164
+  },
+  {
+    "entity_a": "Mentor",
+    "relation_type": "ALLIES_WITH",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 50120
+  },
+  {
+    "entity_a": "Penelope",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 50980
+  },
+  {
+    "entity_a": "Leiocritus",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.85,
+    "source_document": "homer_odyssey",
+    "source_location": 49195
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.95,
+    "source_document": "homer_odyssey",
+    "source_location": 52462
+  },
+  {
+    "entity_a": "Penelope",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Ulysses",
+    "confidence": 0.9,
+    "source_document": "homer_odyssey",
+    "source_location": 51166
+  },
+  {
+    "entity_a": "Ops",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Euryclea",
+    "confidence": 1.0,
+    "source_document": "homer_odyssey",
+    "source_location": 54697
+  }
+]
