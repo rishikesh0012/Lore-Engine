@@ -18,9 +18,10 @@ async function fetchWithTimeout(url: string, options: RequestInit = {}, timeoutM
     });
     clearTimeout(id);
     return response;
-  } catch (error: any) {
+  } catch (error: unknown) {
     clearTimeout(id);
-    if (error.name === "AbortError") {
+    const err = error as Error;
+    if (err.name === "AbortError") {
       throw new Error(`Request timeout after ${timeoutMs / 1000}s while fetching ${url}`);
     }
     throw error;
@@ -32,7 +33,7 @@ export async function fetchHealthStatus(): Promise<{ status: string; neo4j: bool
     const res = await fetchWithTimeout(`${API_BASE_URL}/health`, {}, 5000);
     if (!res.ok) throw new Error("Health check failed");
     return await res.json();
-  } catch (e) {
+  } catch (_e) {
     if (USE_MOCK) {
       return { status: "ok (mock)", neo4j: true, qdrant: true };
     }

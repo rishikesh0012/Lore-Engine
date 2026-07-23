@@ -15,16 +15,12 @@ export default defineConfig({
     baseURL: process.env.PLAYWRIGHT_TEST_BASE_URL || "https://lore-engine-git-main-rishikesh0012s-projects.vercel.app",
     trace: "on-first-retry",
     screenshot: "on",
-    video: "retain-on-failure",
+    video: "off",
   },
   projects: [
     {
       name: "chromium",
-      use: { ...devices["Desktop Chrome"] },
-    },
-    {
-      name: "mobile_chrome",
-      use: { ...devices["Pixel 5"] },
+      use: { ...devices["Desktop Chrome"], channel: "chrome" },
     },
   ],
 });

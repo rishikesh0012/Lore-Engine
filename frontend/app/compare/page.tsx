@@ -45,7 +45,18 @@ export default function SourceComparisonPage() {
   };
 
   useEffect(() => {
-    loadComparison();
+    setLoading(true);
+    setError(null);
+
+    compareSources(sourceA, sourceB)
+      .then((res) => {
+        setData(res);
+        setLoading(false);
+      })
+      .catch((err) => {
+        setError(err.message || "Failed to compare selected sources.");
+        setLoading(false);
+      });
   }, [sourceA, sourceB]);
 
   const handleRandomConflict = () => {

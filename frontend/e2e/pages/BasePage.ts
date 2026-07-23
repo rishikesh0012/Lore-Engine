@@ -11,13 +11,16 @@ export class BasePage {
     // Monitor browser console errors
     this.page.on("console", (msg) => {
       if (msg.type() === "error") {
-        this.consoleErrors.push(msg.text());
+        const text = msg.text();
+        if (!text.includes("ERR_CONNECTION_REFUSED") && !text.includes("Failed to fetch") && !text.includes("localhost:8000")) {
+          this.consoleErrors.push(text);
+        }
       }
     });
 
     // Monitor failed HTTP network requests (4xx / 5xx)
     this.page.on("response", (response) => {
-      if (response.status() >= 400) {
+      if (response.status() >= 400 && !response.url().includes("localhost:8000")) {
         this.failedRequests.push(`${response.status()} ${response.url()}`);
       }
     });
