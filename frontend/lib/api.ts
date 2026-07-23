@@ -275,17 +275,61 @@ export async function compareSources(sourceA: string, sourceB: string): Promise<
     if (!USE_MOCK) {
       throw new Error(`Failed to compare sources on backend: ${(e as Error).message}`);
     }
+
+    if (sourceA === sourceB) {
+      return {
+        source_a: sourceA,
+        source_b: sourceB,
+        agreements: [],
+        contradictions: [],
+        unique_to_a: [],
+        unique_to_b: []
+      };
+    }
+
+    if ((sourceA.includes("hesiod") && sourceB.includes("iliad")) || (sourceA.includes("iliad") && sourceB.includes("hesiod"))) {
+      return {
+        source_a: sourceA,
+        source_b: sourceB,
+        agreements: [
+          { entity: "Zeus", relation: "PARENT_OF", target: "Athena", evidence_a: "Hesiod's Theogony: Athena born from Zeus' head", evidence_b: "Homer's Iliad: Athena invoked as daughter of Zeus" },
+          { entity: "Zeus", relation: "MARRIED_TO", target: "Hera", evidence_a: "Hesiod's Theogony: Hera final divine consort", evidence_b: "Homer's Iliad: Hera queen of heaven beside Zeus" }
+        ],
+        contradictions: [
+          { entity: "Aphrodite", relation: "PARENT_OF", claim_a: "Born from sea foam of Ouranos' severed genitalia (Hesiod)", claim_b: "Daughter of Zeus and Dione (Homer Iliad Book 5)", type: "Disputed Lineage / Origin", confidence: "High" },
+          { entity: "Ares", relation: "ROLE", claim_a: "Son of Zeus and Hera, personifying brutal war (Hesiod)", claim_b: "Champion of Trojans, wounded by Diomedes and Athena (Homer)", type: "Narrative Alignment", confidence: "Medium" }
+        ],
+        unique_to_a: [{ entity: "Cronos", relation: "PARENT_OF", target: "Titan Hierarchy" }],
+        unique_to_b: [{ entity: "Achilles", relation: "ALLIES_WITH", target: "Patroclus" }]
+      };
+    }
+
+    if (sourceA.includes("ovid") || sourceB.includes("ovid")) {
+      return {
+        source_a: sourceA,
+        source_b: sourceB,
+        agreements: [
+          { entity: "Jove / Zeus", relation: "PARENT_OF", target: "Minerva / Athena", evidence_a: "Greek tradition: Athena born from Zeus", evidence_b: "Ovid Metamorphoses: Minerva child of Jove" }
+        ],
+        contradictions: [
+          { entity: "Lycaon", relation: "CAUSED_BY", claim_a: "Absence in Greek primordial lineage (Hesiod/Homer)", claim_b: "Transformed into wolf by Jove triggering Great Flood (Ovid Book 1)", type: "Roman Metamorphosis Myth", confidence: "High" }
+        ],
+        unique_to_a: [{ entity: "Agamemnon", relation: "COMMANDS", target: "Achaean Army" }],
+        unique_to_b: [{ entity: "Daphne", relation: "TRANSFORMED_INTO", target: "Laurel Tree" }]
+      };
+    }
+
     return {
       source_a: sourceA,
       source_b: sourceB,
       agreements: [
-        { entity: "Zeus / Jove", relation: "PARENT_OF", target: "Athena / Minerva", evidence_a: "Hesiod states Athena born from Zeus", evidence_b: "Ovid refers to Minerva as Jove's child" }
+        { entity: "Zeus / Jove", relation: "PARENT_OF", target: "Athena / Minerva", evidence_a: "Source A acknowledges Zeus parentage", evidence_b: "Source B acknowledges Jove parentage" }
       ],
       contradictions: [
-        { entity: "Zeus / Jove", relation: "PARENT_OF", claim_a: "Father of Hermes (Hesiod)", claim_b: "Father of Sarpedon (Homer Iliad)", type: "Disputed Parentage", confidence: "High" }
+        { entity: "Sarpedon", relation: "PARENT_OF", claim_a: "Son of Zeus and Laodamia (Homer)", claim_b: "Son of Zeus and Europa (Hesiod Catalogues)", type: "Disputed Parentage", confidence: "High" }
       ],
-      unique_to_a: [{ entity: "Cronos", relation: "PARENT_OF", target: "Titan" }],
-      unique_to_b: [{ entity: "Jove", relation: "PARENT_OF", target: "Sarpedon" }]
+      unique_to_a: [{ entity: "Poseidon", relation: "OPPOSES", target: "Odysseus" }],
+      unique_to_b: [{ entity: "Telemachus", relation: "SEARCHES_FOR", target: "Odysseus" }]
     };
   }
 }
