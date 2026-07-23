@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Search, Shuffle, Database, GitCommit, Activity, ArrowRight, Sparkles } from "lucide-react";
 
@@ -8,7 +9,7 @@ const UNIVERSES = [
   { 
     id: "hesiod_theogony", 
     title: "Hesiod's Theogony", 
-    desc: "The origins of the cosmos and the pantheon.",
+    desc: "The origins of the cosmos and the Greek pantheon.",
     badge: "139 Passages",
     color: "from-purple-900/40 to-slate-900" 
   },
@@ -18,6 +19,13 @@ const UNIVERSES = [
     desc: "The great clash at Troy and divine intervention.",
     badge: "2,143 Passages",
     color: "from-amber-900/30 to-slate-900" 
+  },
+  { 
+    id: "homer_odyssey", 
+    title: "Homer's Odyssey", 
+    desc: "The decade-long journey of Odysseus back to Ithaca.",
+    badge: "1,027 Passages",
+    color: "from-teal-900/40 to-slate-900" 
   },
   { 
     id: "ovid_metamorphoses", 
@@ -30,6 +38,20 @@ const UNIVERSES = [
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/characters?search=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
+  const handleRandomConflict = () => {
+    const conflicts = ["zeus", "hera", "odysseus", "poseidon", "athena"];
+    const randomChoice = conflicts[Math.floor(Math.random() * conflicts.length)];
+    router.push(`/compare?entity=${randomChoice}`);
+  };
 
   return (
     <main className="min-h-screen bg-[#0D0B14] text-[#EDE6D6] font-sans relative overflow-hidden flex flex-col items-center justify-center p-6 md:p-12">
@@ -56,6 +78,9 @@ export default function Home() {
             <Link href="/ask" className="text-slate-400 hover:text-amber-300 transition-colors">
               NL Search
             </Link>
+            <Link href="/characters" className="text-slate-400 hover:text-amber-300 transition-colors">
+              Characters
+            </Link>
           </div>
         </div>
 
@@ -70,44 +95,46 @@ export default function Home() {
         </header>
 
         {/* Search & Actions */}
-        <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
+        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9C93A8]" size={18} />
             <input 
               type="text" 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search across all pantheons..." 
+              placeholder="Search across all pantheons (press Enter)..." 
               className="w-full bg-[#17131F]/80 border border-[#D4A344]/25 rounded-2xl py-4 pl-12 pr-4 text-sm text-[#EDE6D6] focus:outline-none focus:border-[#D4A344]/60 transition-colors placeholder:text-[#9C93A8]/50 shadow-xl backdrop-blur-md"
             />
           </div>
-          <Link href="/compare">
-            <button className="flex items-center justify-center gap-2.5 px-6 py-4 bg-[#7A5FB0]/20 border border-[#7A5FB0]/40 rounded-2xl hover:bg-[#7A5FB0]/30 transition-all text-[#7A5FB0] hover:text-amber-300 font-medium tracking-wide shadow-lg group w-full sm:w-auto">
-              <Shuffle size={18} className="group-hover:rotate-180 transition-transform duration-500 text-amber-400" />
-              <span className="text-xs font-mono uppercase tracking-wider text-amber-300">Random Conflict</span>
-            </button>
-          </Link>
-        </div>
+          <button 
+            type="button"
+            onClick={handleRandomConflict}
+            className="flex items-center justify-center gap-2.5 px-6 py-4 bg-[#7A5FB0]/20 border border-[#7A5FB0]/40 rounded-2xl hover:bg-[#7A5FB0]/30 transition-all text-[#7A5FB0] hover:text-amber-300 font-medium tracking-wide shadow-lg group w-full sm:w-auto"
+          >
+            <Shuffle size={18} className="group-hover:rotate-180 transition-transform duration-500 text-amber-400" />
+            <span className="text-xs font-mono uppercase tracking-wider text-amber-300">Random Conflict</span>
+          </button>
+        </form>
 
         {/* 3 Main Statistics Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="bg-[#1C1830]/80 border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-2 backdrop-blur-md hover:border-[#D4A344]/40 transition-all shadow-xl group">
+          <Link href="/dashboard" className="bg-[#1C1830]/80 border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-2 backdrop-blur-md hover:border-[#D4A344]/40 transition-all shadow-xl group">
             <Database className="text-[#D4A344] group-hover:scale-110 transition-transform" size={28} />
             <span className="text-4xl font-serif font-semibold text-[#EDE6D6]">4</span>
             <span className="text-[11px] font-mono uppercase tracking-widest text-[#9C93A8]">Source Texts</span>
-          </div>
+          </Link>
 
-          <div className="bg-[#1C1830]/80 border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-2 backdrop-blur-md hover:border-[#D4A344]/40 transition-all shadow-xl group">
+          <Link href="/relationships" className="bg-[#1C1830]/80 border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-2 backdrop-blur-md hover:border-[#D4A344]/40 transition-all shadow-xl group">
             <GitCommit className="text-[#D4A344] group-hover:scale-110 transition-transform" size={28} />
             <span className="text-4xl font-serif font-semibold text-[#EDE6D6]">1,145</span>
             <span className="text-[11px] font-mono uppercase tracking-widest text-[#9C93A8]">Mapped Entities</span>
-          </div>
+          </Link>
 
-          <div className="bg-[#1C1830]/80 border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-2 backdrop-blur-md hover:border-[#C1443C]/40 transition-all shadow-xl group">
+          <Link href="/compare" className="bg-[#1C1830]/80 border border-white/10 rounded-2xl p-6 flex flex-col items-center justify-center gap-2 backdrop-blur-md hover:border-[#C1443C]/40 transition-all shadow-xl group">
             <Activity className="text-[#C1443C] group-hover:scale-110 transition-transform" size={28} />
             <span className="text-4xl font-serif font-semibold text-[#EDE6D6]">52</span>
             <span className="text-[11px] font-mono uppercase tracking-widest text-[#9C93A8]">Contradictions</span>
-          </div>
+          </Link>
         </div>
 
         {/* "Explore the Threads" Section */}
@@ -122,24 +149,24 @@ export default function Home() {
           </div>
 
           {/* Source Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {UNIVERSES.map((u) => (
               <Link key={u.id} href={`/graph?source=${u.id}`}>
-                <div className={`bg-gradient-to-b ${u.color} border border-purple-500/20 hover:border-[#D4A344]/50 rounded-2xl p-6 space-y-4 hover:-translate-y-1 transition-all duration-300 shadow-xl group cursor-pointer h-full flex flex-col justify-between`}>
+                <div className={`bg-gradient-to-b ${u.color} border border-purple-500/20 hover:border-[#D4A344]/50 rounded-2xl p-5 space-y-3 hover:-translate-y-1 transition-all duration-300 shadow-xl group cursor-pointer h-full flex flex-col justify-between`}>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-950/80 text-amber-300 border border-purple-500/30">
                         {u.badge}
                       </span>
                     </div>
-                    <h3 className="font-serif text-xl font-bold text-[#EDE6D6] group-hover:text-[#D4A344] transition-colors">
+                    <h3 className="font-serif text-lg font-bold text-[#EDE6D6] group-hover:text-[#D4A344] transition-colors">
                       {u.title}
                     </h3>
                     <p className="text-xs text-[#9C93A8] leading-relaxed">
                       {u.desc}
                     </p>
                   </div>
-                  <div className="flex items-center gap-1 text-xs font-mono text-[#D4A344] font-semibold pt-4 group-hover:translate-x-1 transition-transform">
+                  <div className="flex items-center gap-1 text-xs font-mono text-[#D4A344] font-semibold pt-3 group-hover:translate-x-1 transition-transform">
                     Enter Graph Universe <ArrowRight size={14} />
                   </div>
                 </div>

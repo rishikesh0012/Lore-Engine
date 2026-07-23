@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { 
   ArrowLeft, 
@@ -56,8 +57,25 @@ const MOCK_GRAPH_LINKS: LinkItem[] = [
   { source: "athena", target: "ares", relation: "OPPOSES", confidence: 0.95, sourceDoc: "Homer's Iliad" },
 ];
 
-export default function InteractiveGraphPage() {
-  const [activeTab, setActiveTab] = useState<"Hesiod" | "Homer" | "Ovid" | "Overlap" | "Conflicts">("Hesiod");
+function GraphContent() {
+  const searchParams = useSearchParams();
+  const sourceParam = searchParams?.get("source")?.toLowerCase() || "";
+
+  const getInitialTab = (): "Hesiod" | "Homer" | "Ovid" | "Overlap" | "Conflicts" => {
+    if (sourceParam.includes("hesiod")) return "Hesiod";
+    if (sourceParam.includes("homer") || sourceParam.includes("iliad") || sourceParam.includes("odyssey")) return "Homer";
+    if (sourceParam.includes("ovid") || sourceParam.includes("metamorphoses")) return "Ovid";
+    if (sourceParam.includes("overlap")) return "Overlap";
+    if (sourceParam.includes("conflict")) return "Conflicts";
+    return "Hesiod";
+  };
+
+  const [activeTab, setActiveTab] = useState<"Hesiod" | "Homer" | "Ovid" | "Overlap" | "Conflicts">(getInitialTab);
+
+  useEffect(() => {
+    setActiveTab(getInitialTab());
+  }, [sourceParam]);
+
   const [selectedNode, setSelectedNode] = useState<Node>(MOCK_GRAPH_NODES[0]);
   const [highlightPath, setHighlightPath] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -88,21 +106,21 @@ export default function InteractiveGraphPage() {
               Lore Engine
             </h1>
             <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-900/40 text-purple-300 border border-purple-500/20">
-              Graph Canvas
+              Interactive Explorer
             </span>
           </div>
         </div>
 
-        {/* Center: Tabs */}
-        <div className="flex items-center gap-1 bg-[#0D0B14] p-1 rounded-full border border-purple-500/20 font-mono text-xs">
+        {/* Center Tabs */}
+        <div className="flex items-center gap-1 bg-[#0D0B14]/80 p-1 rounded-xl border border-purple-500/20">
           {(["Hesiod", "Homer", "Ovid", "Overlap", "Conflicts"] as const).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-1.5 rounded-full transition-all ${
+              className={`px-3.5 py-1.5 rounded-lg text-xs font-mono transition-all ${
                 activeTab === tab
-                  ? "bg-[#7A5FB0] text-white shadow-lg font-semibold"
-                  : "text-[#9C93A8] hover:text-[#EDE6D6]"
+                  ? "bg-purple-600/30 text-[#D4A344] border border-[#D4A344]/40 font-bold shadow-md"
+                  : "text-[#9C93A8] hover:text-[#EDE6D6] hover:bg-purple-950/30"
               }`}
             >
               {tab}
@@ -110,234 +128,80 @@ export default function InteractiveGraphPage() {
           ))}
         </div>
 
-        {/* Right: Path Highlight Button */}
+        {/* Right Search & Controls */}
         <div className="flex items-center gap-3">
-          <button
-            onClick={() => setHighlightPath(!highlightPath)}
-            className={`flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono transition-all ${
-              highlightPath
-                ? "bg-[#D4A344] text-[#0D0B14] font-bold shadow-md shadow-[#D4A344]/20"
-                : "bg-purple-950/60 border border-purple-500/30 text-[#D4A344] hover:bg-purple-900/40"
-            }`}
-          >
-            <Sparkles size={14} />
-            <span>{highlightPath ? "Path Highlighted" : "Highlight Shortest Path"}</span>
-          </button>
-        </div>
-      </header>
-
-      {/* Main Workspace Layout */}
-      <div className="flex-1 flex overflow-hidden relative">
-        {/* Left Sidebar: Key Figures Panel */}
-        <aside className="w-72 bg-[#17131F]/80 border-r border-purple-500/20 flex flex-col p-4 z-20 backdrop-blur-md">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="font-serif text-sm font-bold text-[#D4A344] uppercase tracking-wider flex items-center gap-2">
-              <Users size={16} /> Key Figures
-            </h2>
-            <span className="text-[10px] font-mono text-[#9C93A8]">{filteredNodes.length} figures</span>
-          </div>
-
-          {/* Quick Search */}
-          <div className="relative mb-4">
+          <div className="relative w-48">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9C93A8]" size={14} />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search figures..."
-              className="w-full bg-[#0D0B14] border border-purple-500/20 rounded-xl py-2 pl-9 pr-3 text-xs text-[#EDE6D6] placeholder:text-[#9C93A8]/50 focus:outline-none focus:border-[#D4A344]/50 font-mono"
+              placeholder="Find entity..."
+              className="w-full bg-[#0D0B14] border border-purple-500/30 rounded-lg py-1.5 pl-8 pr-3 text-xs text-[#EDE6D6] focus:outline-none focus:border-[#D4A344]"
             />
           </div>
+        </div>
+      </header>
 
-          {/* Key Figures List */}
-          <div className="flex-1 overflow-y-auto space-y-2 pr-1 scrollbar-thin scrollbar-thumb-purple-900">
-            {filteredNodes.map((node) => {
+      {/* Main Workspace */}
+      <div className="flex-1 flex overflow-hidden relative">
+        {/* Interactive Graph Canvas Area */}
+        <main className="flex-1 relative bg-gradient-to-b from-[#0D0B14] via-[#130F21] to-[#0D0B14] flex items-center justify-center p-8 overflow-hidden">
+          {/* Radial Grid Pattern */}
+          <div className="absolute inset-0 bg-[radial-gradient(#3B2D54_1px,transparent_1px)] [background-size:32px_32px] opacity-25 pointer-events-none" />
+
+          {/* Graph Nodes Visual Representation */}
+          <div className="relative w-full h-full max-w-4xl max-h-[600px] flex items-center justify-center">
+            {filteredNodes.map((node, i) => {
               const isSelected = selectedNode.id === node.id;
+              const angle = (i / filteredNodes.length) * 2 * Math.PI;
+              const radius = 220;
+              const x = Math.cos(angle) * radius;
+              const y = Math.sin(angle) * radius;
+
               return (
-                <div
+                <button
                   key={node.id}
                   onClick={() => setSelectedNode(node)}
-                  className={`flex items-center justify-between p-3 rounded-xl cursor-pointer transition-all duration-200 ${
+                  style={{
+                    transform: `translate(${x}px, ${y}px)`,
+                  }}
+                  className={`absolute group p-4 rounded-2xl border transition-all duration-300 backdrop-blur-md flex flex-col items-center gap-1.5 shadow-2xl ${
                     isSelected
-                      ? "bg-gradient-to-r from-purple-900/60 to-slate-900 border border-[#D4A344]/50 shadow-md shadow-purple-950"
-                      : "bg-[#1C1830]/60 border border-purple-500/10 hover:border-purple-500/30 hover:bg-[#1C1830]"
+                      ? "bg-amber-500/20 border-[#D4A344] scale-110 z-20 shadow-amber-500/20"
+                      : "bg-[#17131F]/90 border-purple-500/30 hover:border-purple-400 hover:scale-105 z-10"
                   }`}
                 >
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-purple-950/80 border border-purple-500/30 flex items-center justify-center text-sm">
-                      {node.avatar}
-                    </div>
-                    <div>
-                      <h3 className={`text-xs font-semibold ${isSelected ? "text-[#D4A344]" : "text-[#EDE6D6]"}`}>
-                        {node.name}
-                      </h3>
-                      <p className="text-[10px] text-[#9C93A8] line-clamp-1">{node.tradition}</p>
-                    </div>
-                  </div>
-                  <span className="text-[10px] font-mono text-[#D4A344] font-bold bg-purple-950 px-2 py-0.5 rounded border border-purple-500/20">
-                    {node.val}
+                  <span className="text-2xl">{node.avatar}</span>
+                  <span className="font-serif font-bold text-xs text-[#EDE6D6] tracking-wide">
+                    {node.name}
                   </span>
-                </div>
+                  <span className="text-[9px] font-mono text-[#D4A344] px-1.5 py-0.5 rounded bg-purple-950/60">
+                    {node.val} connections
+                  </span>
+                </button>
               );
             })}
           </div>
-        </aside>
-
-        {/* Center Canvas: Interactive Graph */}
-        <main className="flex-1 bg-[#09070F] relative overflow-hidden flex items-center justify-center">
-          {/* Subtle Background Glow */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-purple-950/20 rounded-full blur-[140px]" />
-          </div>
-
-          {/* Interactive Graph SVG Canvas */}
-          <div className="absolute inset-0 flex items-center justify-center p-8">
-            <svg className="w-full h-full">
-              <defs>
-                <marker id="arrow" viewBox="0 0 10 10" refX="22" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#7A5FB0" />
-                </marker>
-              </defs>
-
-              {/* Graph Edges */}
-              {MOCK_GRAPH_LINKS.map((link, idx) => {
-                const isSelectedEdge = link.source === selectedNode.id || link.target === selectedNode.id;
-                const srcNodeIdx = MOCK_GRAPH_NODES.findIndex((n) => n.id === link.source);
-                const tgtNodeIdx = MOCK_GRAPH_NODES.findIndex((n) => n.id === link.target);
-
-                const x1 = 220 + (srcNodeIdx % 4) * 230;
-                const y1 = 160 + Math.floor(srcNodeIdx / 4) * 180;
-                const x2 = 220 + (tgtNodeIdx % 4) * 230;
-                const y2 = 160 + Math.floor(tgtNodeIdx / 4) * 180;
-
-                return (
-                  <g key={idx}>
-                    <line
-                      x1={x1}
-                      y1={y1}
-                      x2={x2}
-                      y2={y2}
-                      stroke={
-                        link.relation === "OPPOSES"
-                          ? "#C1443C"
-                          : link.relation === "PARENT_OF"
-                          ? "#3B82F6"
-                          : "#10B981"
-                      }
-                      strokeWidth={isSelectedEdge ? "3" : "1.5"}
-                      strokeDasharray={link.relation === "OPPOSES" ? "4,4" : "none"}
-                      opacity={isSelectedEdge ? 1 : 0.4}
-                      markerEnd="url(#arrow)"
-                      className="transition-all duration-300"
-                    />
-                    <text
-                      x={(x1 + x2) / 2}
-                      y={(y1 + y2) / 2 - 8}
-                      fill={isSelectedEdge ? "#D4A344" : "#9C93A8"}
-                      fontSize="10"
-                      fontFamily="monospace"
-                      textAnchor="middle"
-                      className="font-bold"
-                    >
-                      {link.relation}
-                    </text>
-                  </g>
-                );
-              })}
-
-              {/* Graph Nodes */}
-              {MOCK_GRAPH_NODES.map((node, idx) => {
-                const isSelected = selectedNode.id === node.id;
-                const cx = 220 + (idx % 4) * 230;
-                const cy = 160 + Math.floor(idx / 4) * 180;
-
-                return (
-                  <g
-                    key={node.id}
-                    transform={`translate(${cx}, ${cy})`}
-                    onClick={() => setSelectedNode(node)}
-                    className="cursor-pointer group"
-                  >
-                    <circle
-                      r={isSelected ? 28 : 22}
-                      fill={isSelected ? "#7A5FB0" : "#1C1830"}
-                      stroke={isSelected ? "#D4A344" : "#7A5FB0"}
-                      strokeWidth={isSelected ? "3" : "1.5"}
-                      className="transition-all duration-300 group-hover:scale-110 drop-shadow-xl"
-                    />
-                    <text
-                      textAnchor="middle"
-                      dy="4"
-                      fill="#EDE6D6"
-                      fontSize="12"
-                      fontWeight="bold"
-                    >
-                      {node.avatar}
-                    </text>
-                    <text
-                      textAnchor="middle"
-                      dy="44"
-                      fill={isSelected ? "#D4A344" : "#EDE6D6"}
-                      fontSize="12"
-                      fontWeight="600"
-                      fontFamily="serif"
-                      className="tracking-wide"
-                    >
-                      {node.name}
-                    </text>
-                  </g>
-                );
-              })}
-            </svg>
-          </div>
-
-          {/* Controls Bar Overlay */}
-          <div className="absolute bottom-6 left-6 flex items-center gap-2 bg-[#17131F]/90 border border-purple-500/20 p-2 rounded-2xl backdrop-blur-md shadow-2xl">
-            <button className="p-2 rounded-xl bg-purple-950/60 hover:bg-purple-900/60 text-[#D4A344] transition-colors">
-              <ZoomIn size={16} />
-            </button>
-            <button className="p-2 rounded-xl bg-purple-950/60 hover:bg-purple-900/60 text-[#D4A344] transition-colors">
-              <ZoomOut size={16} />
-            </button>
-            <button className="p-2 rounded-xl bg-purple-950/60 hover:bg-purple-900/60 text-[#D4A344] transition-colors">
-              <RefreshCw size={16} />
-            </button>
-          </div>
         </main>
 
-        {/* Right Sidebar: Node Details Panel */}
-        <aside className="w-80 bg-[#17131F]/80 border-l border-purple-500/20 flex flex-col p-5 z-20 backdrop-blur-md justify-between">
+        {/* Right Entity Details Sidebar */}
+        <aside className="w-80 bg-[#17131F]/95 border-l border-purple-500/20 p-6 flex flex-col justify-between z-20 backdrop-blur-md">
           <div className="space-y-6">
-            {/* Selected Node Header */}
-            <div className="flex items-center gap-4 pb-4 border-b border-purple-500/20">
-              <div className="w-14 h-14 rounded-2xl bg-purple-950/80 border border-[#D4A344]/40 flex items-center justify-center text-2xl shadow-xl">
+            <div className="flex items-center gap-3 pb-4 border-b border-purple-500/20">
+              <div className="w-12 h-12 rounded-xl bg-purple-900/40 border border-purple-500/30 flex items-center justify-center text-2xl">
                 {selectedNode.avatar}
               </div>
               <div>
                 <h2 className="font-serif text-xl font-bold text-[#D4A344]">
                   {selectedNode.name}
                 </h2>
-                <p className="text-xs text-[#9C93A8]">{selectedNode.tradition}</p>
+                <p className="text-xs font-mono text-[#9C93A8]">{selectedNode.tradition}</p>
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="grid grid-cols-2 gap-2">
-              <Link href={`/characters`}>
-                <button className="w-full py-2.5 px-3 bg-[#7A5FB0] hover:bg-[#684E9C] text-white font-medium text-xs rounded-xl transition-all shadow-md flex items-center justify-center gap-1.5">
-                  <Sparkles size={14} /> Profile
-                </button>
-              </Link>
-              <Link href={`/compare`}>
-                <button className="w-full py-2.5 px-3 bg-purple-950/80 border border-purple-500/30 hover:bg-purple-900/60 text-[#D4A344] font-medium text-xs rounded-xl transition-all flex items-center justify-center gap-1.5">
-                  <GitCommit size={14} /> Compare
-                </button>
-              </Link>
-            </div>
-
-            {/* Known Relationships Section */}
             <div className="space-y-3">
-              <h3 className="font-serif text-xs font-bold text-[#D4A344] uppercase tracking-wider">
+              <h3 className="text-xs font-mono uppercase tracking-wider text-purple-300">
                 Known Relationships ({selectedNodeRels.length})
               </h3>
 
@@ -376,11 +240,19 @@ export default function InteractiveGraphPage() {
 
           {/* Graph Status Footer */}
           <div className="pt-4 border-t border-purple-500/20 text-[10px] font-mono text-[#9C93A8] flex justify-between items-center">
-            <span>Graph Status: Healthy</span>
+            <span>Active View: {activeTab}</span>
             <span className="text-emerald-400">Neo4j Bolt Live</span>
           </div>
         </aside>
       </div>
     </div>
+  );
+}
+
+export default function InteractiveGraphPage() {
+  return (
+    <Suspense fallback={<div className="h-screen w-screen bg-[#0D0B14] flex items-center justify-center text-amber-400 font-mono text-xs">Loading Knowledge Graph...</div>}>
+      <GraphContent />
+    </Suspense>
   );
 }
