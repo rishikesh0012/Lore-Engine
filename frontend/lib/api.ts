@@ -1,6 +1,6 @@
 import { Character, Relationship, GraphNode, GraphLink, DashboardData, AnalyticsData, AskResponse, CompareResponse } from "./types";
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8002/api";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
 const USE_MOCK = process.env.NEXT_PUBLIC_USE_MOCK_DATA === "true";
 const DEFAULT_TIMEOUT_MS = 8000;
 
