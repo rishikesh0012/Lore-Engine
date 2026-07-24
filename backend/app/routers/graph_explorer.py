@@ -22,12 +22,11 @@ def get_graph(
     entity: str = Query(None, description="Center entity to fetch 1-hop subgraph"),
     source: str = Query(None, description="Filter to edges from a specific source")
 ):
-    db_client.connect()
-    
     nodes_dict = {}
     links = []
     
     try:
+        db_client.connect()
         if entity:
             query = """
             MATCH (n)-[r]-(m)
