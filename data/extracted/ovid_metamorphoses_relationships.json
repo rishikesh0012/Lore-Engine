@@ -1,10 +1,162 @@
 [
   {
-    "entity_a": "McKay",
-    "relation_type": "LOCATED_AT",
-    "entity_b": "Philadelphia",
+    "entity_a": "Jove",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Minerva",
+    "confidence": 0.98,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 1
+  },
+  {
+    "entity_a": "Saturn",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Jove",
+    "confidence": 0.98,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 2
+  },
+  {
+    "entity_a": "Neptune",
+    "relation_type": "OPPOSES",
+    "entity_b": "Ulysses",
+    "confidence": 0.96,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 3
+  },
+  {
+    "entity_a": "Apollo",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Daphne",
+    "confidence": 0.97,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 4
+  },
+  {
+    "entity_a": "Kirke",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Picus",
     "confidence": 0.95,
     "source_document": "ovid_metamorphoses",
-    "source_location": 94
+    "source_location": 5
+  },
+  {
+    "entity_a": "Scylla",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Sea Monster",
+    "confidence": 0.94,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 6
+  },
+  {
+    "entity_a": "Lycaon",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Wolf",
+    "confidence": 0.98,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 7
+  },
+  {
+    "entity_a": "Phaethon",
+    "relation_type": "CHILD_OF",
+    "entity_b": "Phoebus",
+    "confidence": 0.96,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 8
+  },
+  {
+    "entity_a": "Orpheus",
+    "relation_type": "MARRIED_TO",
+    "entity_b": "Eurydice",
+    "confidence": 0.99,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 9
+  },
+  {
+    "entity_a": "Narcissus",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Flower",
+    "confidence": 0.97,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 10
+  },
+  {
+    "entity_a": "Echo",
+    "relation_type": "LOVES",
+    "entity_b": "Narcissus",
+    "confidence": 0.96,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 11
+  },
+  {
+    "entity_a": "Pyramus",
+    "relation_type": "LOVES",
+    "entity_b": "Thisbe",
+    "confidence": 0.98,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 12
+  },
+  {
+    "entity_a": "Perseus",
+    "relation_type": "DEFEATS",
+    "entity_b": "Medusa",
+    "confidence": 0.97,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 13
+  },
+  {
+    "entity_a": "Daedalus",
+    "relation_type": "PARENT_OF",
+    "entity_b": "Icarus",
+    "confidence": 0.98,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 14
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "RULES",
+    "entity_b": "Mount Olympus",
+    "confidence": 0.99,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 15
+  },
+  {
+    "entity_a": "Juno",
+    "relation_type": "OPPOSES",
+    "entity_b": "Io",
+    "confidence": 0.95,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 16
+  },
+  {
+    "entity_a": "Jove",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Bull",
+    "confidence": 0.96,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 17
+  },
+  {
+    "entity_a": "Bacchus",
+    "relation_type": "CHILD_OF",
+    "entity_b": "Jove",
+    "confidence": 0.97,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 18
+  },
+  {
+    "entity_a": "Venus",
+    "relation_type": "LOVES",
+    "entity_b": "Adonis",
+    "confidence": 0.96,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 19
+  },
+  {
+    "entity_a": "King Midas",
+    "relation_type": "TRANSFORMS",
+    "entity_b": "Gold",
+    "confidence": 0.98,
+    "source_document": "ovid_metamorphoses",
+    "source_location": 20
   }
 ]
