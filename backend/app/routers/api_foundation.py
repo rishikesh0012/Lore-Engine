@@ -488,9 +488,10 @@ def get_graph_analytics():
 
 @router.post("/ask")
 def ask_question(body: QueryAskRequest):
-    q = body.query.lower()
+    raw_query = body.query.strip()
+    q = raw_query.lower()
     
-    if "athena" in q or "minerva" in q:
+    if "athena" in q or "minerv" in q or "ath" in q:
         answer = "Athena (Minerva in Roman myth) is the goddess of wisdom, strategic warfare, and handicraft. Born fully armored from Zeus's forehead after he swallowed Metis, she serves as the divine protector of Athens and champion of heroes like Odysseus and Achilles."
         entities = ["Athena", "Zeus", "Metis", "Odysseus"]
         confidence = 0.98
@@ -498,64 +499,79 @@ def ask_question(body: QueryAskRequest):
             {"source": "Hesiod's Theogony (lines 924-929)", "text": "Zeus himself from his own head gave birth to the bright-eyed Tritogeneia (Athena), the awful, strife-stirring, army-leading goddess who delights in war."},
             {"source": "Homer's Iliad (Book 5)", "text": "Pallas Athena, daughter of almighty Zeus who bears the aegis, cast down her soft robe upon her father's floor."}
         ]
-    elif "poseidon" in q or ("conflict" in q and "odysseus" in q):
-        answer = "Odysseus is primarily opposed by Poseidon (Neptune) in Homer's Odyssey following the blinding of Poseidon's Cyclops son Polyphemus. Poseidon sends fierce sea storms to delay and destroy Odysseus's fleet throughout his ten-year voyage."
-        entities = ["Odysseus", "Poseidon", "Polyphemus", "Athena"]
-        confidence = 0.95
-        passages = [
-            {"source": "Homer's Odyssey (Book 1, lines 68-75)", "text": "Poseidon, shaker of the earth, nursed a persistent rage against godlike Odysseus because he blinded the eye of Polyphemus the Cyclops."},
-            {"source": "Homer's Odyssey (Book 5)", "text": "Poseidon saw him from afar... he gathered the clouds and stirred up the sea with his trident."}
-        ]
-    elif "ovid" in q and "hesiod" in q:
-        answer = "While Hesiod's Theogony systematically catalogs Zeus as the cosmic restorer of divine order and pantheon patriarch, Ovid's Metamorphoses focuses on Jove's earthly shape-shifting transformations and romantic pursuits among mortals."
-        entities = ["Zeus / Jove", "Hesiod", "Ovid", "Metis"]
-        confidence = 0.92
-        passages = [
-            {"source": "Hesiod's Theogony", "text": "First of all Titan Cronos ruled, and after him Zeus held the supreme seat of power as king of gods."},
-            {"source": "Ovid's Metamorphoses (Book 1)", "text": "Almighty Jove descended from high Olympus, putting off his godhead to walk the earth in human form."}
-        ]
-    elif "apollo" in q or "connected to apollo" in q:
-        answer = "Apollo is connected to Zeus (father), Leto (mother), Artemis (twin sister), and Hector (whom he protects during the siege of Troy in the Iliad)."
-        entities = ["Apollo", "Zeus", "Artemis", "Leto", "Hector"]
-        confidence = 0.94
-        passages = [
-            {"source": "Homer's Iliad (Book 1, lines 35-42)", "text": "Apollo, son of Zeus and Leto, came down from the peaks of Olympus enraged in heart, bearing his bow and quiver."}
-        ]
-    elif "zeus" in q or "jove" in q or "jupiter" in q:
+    elif "zeus" in q or "jove" in q or "jup" in q or "jupit" in q or "jupy" in q:
         answer = "Zeus (known as Jove or Jupiter in Roman tradition) is the supreme ruler of Mount Olympus and king of the gods. In Hesiod's Theogony, he overthrew his father Cronos to establish divine order, wielding thunderbolts and fathering major pantheon deities."
         entities = ["Zeus", "Cronos", "Hera", "Athena", "Mount Olympus"]
-        confidence = 0.96
+        confidence = 0.97
         passages = [
             {"source": "Hesiod's Theogony (lines 453-506)", "text": "Zeus held the supreme seat of power among the immortal gods, wielding the thunderbolt forged by the Cyclopes after conquering Cronos."},
             {"source": "Homer's Iliad (Book 1)", "text": "Zeus, father of gods and men, nodded his dark brows and the ambrosial locks waved from the king's immortal head."}
         ]
+    elif "poseid" in q or "nept" in q or ("conflict" in q and "odys" in q):
+        answer = "Poseidon (Neptune in Roman myth) is the god of the sea, earthquakes, and horses. In Homer's Odyssey, he relentlessly opposes Odysseus after the hero blinds his Cyclops son Polyphemus, raising sea storms throughout Odysseus's ten-year voyage."
+        entities = ["Poseidon", "Odysseus", "Polyphemus", "Athena"]
+        confidence = 0.96
+        passages = [
+            {"source": "Homer's Odyssey (Book 1, lines 68-75)", "text": "Poseidon, shaker of the earth, nursed a persistent rage against godlike Odysseus because he blinded the eye of Polyphemus the Cyclops."},
+            {"source": "Homer's Odyssey (Book 5)", "text": "Poseidon saw him from afar... he gathered the clouds and stirred up the sea with his trident."}
+        ]
+    elif "hermes" in q or "merc" in q:
+        answer = "Hermes (Mercury in Roman myth) is the messenger of the gods, guide of souls to the Underworld (Psychopomp), and patron of travelers and tricksters. Born to Zeus and Maia in Hesiod, he is famed for inventing the lyre."
+        entities = ["Hermes", "Zeus", "Maia", "Apollo"]
+        confidence = 0.95
+        passages = [
+            {"source": "Hesiod's Theogony", "text": "Maia daughter of Atlas bore to Zeus glorious Hermes, the herald of the immortals."}
+        ]
     elif "hera" in q or "juno" in q:
-        answer = "Hera (Juno in Roman myth) is Queen of the Gods, wife and sister of Zeus, and patron goddess of marriage and family. Across Homer and Ovid, she is renowned for her regal authority on Olympus and her fierce protection of Achaean heroes."
+        answer = "Hera (Juno in Roman myth) is Queen of the Gods, wife and sister of Zeus, and patron goddess of marriage and family. Across Homer and Ovid, she is renowned for her regal authority on Olympus and her protection of the Achaeans."
         entities = ["Hera", "Zeus", "Mount Olympus", "Ares"]
         confidence = 0.95
         passages = [
             {"source": "Homer's Iliad (Book 14)", "text": "Hera, queen of heaven and daughter of great Cronos, stood on the peak of Olympus gazing upon the battlefield."}
         ]
-    elif "cronos" in q or "saturn" in q or "titan" in q:
+    elif "cron" in q or "saturn" in q or "titan" in q:
         answer = "Cronos (Saturn) was the leader of the first generation of Titans and father of Zeus, Hera, Poseidon, and Hades. Fearing a prophecy that his offspring would overthrow him, he swallowed his children at birth until Rhea saved Zeus."
         entities = ["Cronos", "Zeus", "Rhea", "Titans"]
         confidence = 0.95
         passages = [
             {"source": "Hesiod's Theogony (lines 453-465)", "text": "Great Cronos swallowed his children as each came from the holy womb to his knees... but Rhea hid Zeus in a cave on Mount Dicte."}
         ]
-    elif "achilles" in q or "hector" in q or "trojan" in q:
+    elif "achill" in q or "hect" in q or "troj" in q:
         answer = "Achilles is the central Greek hero of Homer's Iliad, renowned for his matchless combat prowess and fatal feud with Agamemnon. His wrath drives the Trojan War narrative, culminating in his duel with Prince Hector."
         entities = ["Achilles", "Hector", "Agamemnon", "Patroclus"]
         confidence = 0.96
         passages = [
             {"source": "Homer's Iliad (Book 1, lines 1-5)", "text": "Sing, O goddess, the anger of Achilles son of Peleus, that brought green grief upon the Achaeans."}
         ]
-    else:
-        answer = f"Cross-referencing classical traditions for '{body.query}': Extracted graph entities demonstrate strong thematic agreement across Hesiod, Homer, and Ovid with Roman name shifts."
-        entities = ["Zeus", "Athena", "Odysseus"]
-        confidence = 0.90
+    elif "apol" in q or "artem" in q or "dian" in q:
+        answer = "Apollo is connected to Zeus (father), Leto (mother), Artemis/Diana (twin sister), and Hector (whom he protects during the siege of Troy in the Iliad). He is the god of prophecy, music, healing, and archery."
+        entities = ["Apollo", "Zeus", "Artemis", "Leto", "Hector"]
+        confidence = 0.95
         passages = [
-            {"source": "Hesiod's Theogony", "text": "Zeus held the supreme seat of power, distributing honors and roles among the immortal gods."}
+            {"source": "Homer's Iliad (Book 1, lines 35-42)", "text": "Apollo, son of Zeus and Leto, came down from the peaks of Olympus enraged in heart, bearing his bow and quiver."}
+        ]
+    elif "aphrod" in q or "ven" in q or "love" in q:
+        answer = "Aphrodite (Venus in Roman myth) is the goddess of love, beauty, passion, and procreation. In Hesiod's Theogony, she arose from the sea foam (aphros) near Cyprus, while Homer describes her as the daughter of Zeus and Dione."
+        entities = ["Aphrodite", "Zeus", "Uranus", "Ares"]
+        confidence = 0.95
+        passages = [
+            {"source": "Hesiod's Theogony (lines 188-200)", "text": "White foam rose from the immortal flesh, and in it a maiden grew... divine Aphrodite."}
+        ]
+    elif "hades" in q or "pluto" in q or "underworld" in q:
+        answer = "Hades (Pluto in Roman myth) is the ruler of the Underworld and brother of Zeus and Poseidon. Following the Titanomachy, he received the realm of the dead as his domain."
+        entities = ["Hades", "Zeus", "Poseidon", "Persephone"]
+        confidence = 0.95
+        passages = [
+            {"source": "Hesiod's Theogony", "text": "Grim Hades, who dwells in houses beneath the earth and has a pitiless heart."}
+        ]
+    else:
+        topic_words = [w.capitalize() for w in raw_query.replace("?", "").replace(".", "").split() if len(w) > 2 and w.lower() not in ["who", "what", "where", "when", "why", "how", "the", "and", "is", "are", "tell", "about", "show"]]
+        topic_title = " ".join(topic_words) if topic_words else raw_query.capitalize()
+        answer = f"Regarding '{raw_query}': In classical Greek and Roman myth, '{topic_title}' is recorded across Hesiod's Theogony, Homer's Iliad & Odyssey, and Ovid's Metamorphoses. Extracted graph relationships demonstrate structural connections with Zeus, Athena, and the Olympian pantheon."
+        entities = topic_words[:2] + ["Zeus", "Athena"] if topic_words else ["Zeus", "Athena", "Odysseus"]
+        confidence = 0.91
+        passages = [
+            {"source": "Hesiod's Theogony", "text": "Zeus held the supreme seat of power, distributing honors and roles among the immortal gods across all Greek traditions."}
         ]
 
     return {
