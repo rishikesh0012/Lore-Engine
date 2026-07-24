@@ -3,7 +3,7 @@ import asyncio
 from typing import List, Dict, Any
 
 from app.llm.nemotron_client import embed_texts, call_nemotron
-from app.retrieval.vector_search import vdb_client
+from app.retrieval.vector_search import search_chunks, embed_texts
 from app.graph.neo4j_client import db_client
 from app.extraction.entity_extractor import ENTITY_REGEXES
 
@@ -37,22 +37,18 @@ class HybridRetriever:
 
     async def get_vector_passages(self, query: str, limit: int = 5, source: str = None) -> List[Dict[str, Any]]:
         try:
-            query_vector = (await embed_texts([query]))[0]
-            # Fetch a few extra to account for filtering
-            hits = vdb_client.search(query_vector=query_vector, limit=limit + 5, source_filter=source)
-            
+            hits = search_chunks(query, source_document=source, top_k=limit + 5)
             valid_hits = []
             for hit in hits:
-                text = hit.get('chunk_text', '').strip()
+                text = (hit.get('chunk_text') or '').strip()
                 if not text or text == '((LACUNA))' or len(text) < 20:
                     continue
                 valid_hits.append(hit)
                 if len(valid_hits) == limit:
                     break
-                    
             return valid_hits
         except Exception as e:
-            print(f"Warning: Failed to get embeddings ({e}). Returning empty passages.")
+            print(f"Warning: Failed to retrieve vector passages ({e}). Returning empty passages.")
             return []
 
     def get_graph_neighborhood(self, entities: List[str]) -> tuple[str, Dict[str, Any]]:
