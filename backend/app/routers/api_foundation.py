@@ -453,8 +453,8 @@ def get_shortest_path(start: str, target: str):
 @router.get("/analytics")
 def get_graph_analytics():
     dash_data = _get_live_dashboard_data()
-    rel_count = dash_data["relationship_count"]
-    entity_count = dash_data["total_entities"]
+    rel_count = dash_data["stats"]["total_relationships"]
+    entity_count = dash_data["stats"]["total_characters"]
     
     return {
         "network_stats": {
