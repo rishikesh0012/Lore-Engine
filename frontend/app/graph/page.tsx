@@ -276,16 +276,18 @@ function GraphContent() {
             <div className="text-amber-400 font-mono text-xs animate-pulse">Loading Source Graph...</div>
           ) : (
             <div
-              className="relative w-full h-full max-w-4xl max-h-[600px] flex items-center justify-center transition-transform duration-300"
+              className="relative w-full h-full max-w-5xl max-h-[720px] flex items-center justify-center transition-transform duration-300"
               style={{ transform: `scale(${zoomLevel})` }}
             >
               {filteredNodes.map((node, i) => {
                 const isSelected = selectedNode?.id === node.id;
                 const isHighlighted = highlightedPath.includes(node.label);
-                const angle = (i / filteredNodes.length) * 2 * Math.PI;
-                const radius = 220;
+                const count = filteredNodes.length;
+                const radius = Math.max(220, Math.min(380, count * 3.6));
+                const angle = (i / count) * 2 * Math.PI;
                 const x = Math.cos(angle) * radius;
                 const y = Math.sin(angle) * radius;
+                const isCompact = count > 35;
 
                 return (
                   <button
@@ -293,19 +295,21 @@ function GraphContent() {
                     onClick={() => setSelectedNode(node)}
                     aria-label={`Select character ${node.label}`}
                     style={{ transform: `translate(${x}px, ${y}px)` }}
-                    className={`absolute group p-4 rounded-2xl border transition-all duration-300 backdrop-blur-md flex flex-col items-center gap-1.5 shadow-2xl ${
+                    className={`absolute group transition-all duration-300 backdrop-blur-md flex items-center gap-1.5 shadow-xl whitespace-nowrap ${
+                      isCompact ? "px-2.5 py-1 rounded-xl" : "p-3.5 rounded-2xl flex-col"
+                    } ${
                       isSelected
-                        ? "bg-amber-500/20 border-[#D4A344] scale-110 z-20 shadow-amber-500/20"
+                        ? "bg-amber-500/30 border-2 border-[#D4A344] scale-110 z-30 shadow-amber-500/30"
                         : isHighlighted
-                        ? "bg-emerald-500/20 border-emerald-400 scale-105 z-15"
-                        : "bg-[#17131F]/90 border-purple-500/30 hover:border-purple-400 hover:scale-105 z-10"
+                        ? "bg-emerald-500/20 border border-emerald-400 scale-105 z-20"
+                        : "bg-[#17131F]/90 border border-purple-500/30 hover:border-purple-400 hover:scale-110 hover:z-30"
                     }`}
                   >
-                    <span className="font-serif font-bold text-xs text-[#EDE6D6] tracking-wide">
+                    <span className={`font-serif font-bold text-[#EDE6D6] tracking-wide ${isCompact ? "text-[11px]" : "text-xs"}`}>
                       {node.label}
                     </span>
-                    <span className="text-[9px] font-mono text-[#D4A344] px-1.5 py-0.5 rounded bg-purple-950/60">
-                      {node.val} links
+                    <span className="text-[9px] font-mono text-[#D4A344] px-1 py-0.2 rounded bg-purple-950/60">
+                      {node.val} {isCompact ? "L" : "links"}
                     </span>
                   </button>
                 );
