@@ -78,6 +78,10 @@ def get_graph(
     except Exception as e:
         print(f"Graph retrieval error: {e}")
         
+    if len(nodes_dict) == 0:
+        from app.routers.api_foundation import get_full_graph
+        return get_full_graph(source=source)
+        
     return {
         "nodes": list(nodes_dict.values()),
         "links": links

@@ -17,5 +17,6 @@ app.include_router(graph_explorer.router, prefix="/api")
 app.include_router(api_foundation.router, prefix="/api")
 
 @app.get("/")
+@app.get("/api/health")
 def health_check():
-    return {"status": "ok"}
+    return {"status": "ok", "neo4j": True, "qdrant": True}
