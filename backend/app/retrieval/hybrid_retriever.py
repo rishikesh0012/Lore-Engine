@@ -59,14 +59,17 @@ class HybridRetriever:
         if not entities:
             return "No relevant graph structure found.", {"nodes": [], "links": []}
             
-        # 1 and 2 hop neighborhood
         query = """
         MATCH (a)-[r]-(b)
         WHERE a.name IN $entities
         RETURN a.name AS source, type(r) AS relation, b.name AS target, r.source AS text_source
         LIMIT 50
         """
-        results = db_client.execute_read(query, {"entities": entities})
+        results = []
+        try:
+            results = db_client.execute_read(query, {"entities": entities})
+        except Exception as e:
+            print(f"Warning: Graph neighborhood retrieval error ({e}). Returning empty graph structure.")
         
         if not results:
             return "No relevant graph structure found.", {"nodes": [], "links": []}
