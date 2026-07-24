@@ -148,9 +148,11 @@ export async function fetchRelationships(filterType?: string, search?: string): 
   }
 }
 
-export async function fetchGraph(): Promise<{ nodes: GraphNode[]; links: GraphLink[] }> {
+export async function fetchGraph(source?: string): Promise<{ nodes: GraphNode[]; links: GraphLink[] }> {
   try {
-    const res = await fetchWithTimeout(`${API_BASE_URL}/graph`);
+    const url = new URL(`${API_BASE_URL}/graph`);
+    if (source) url.searchParams.append("source", source);
+    const res = await fetchWithTimeout(url.toString());
     if (!res.ok) throw new Error(`Graph API error (${res.status})`);
     return await res.json();
   } catch (e) {

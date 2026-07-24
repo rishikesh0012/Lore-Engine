@@ -22,7 +22,7 @@ import {
   User,
   GitCompare
 } from "lucide-react";
-import { getApiBaseUrl } from "@/lib/api";
+import { getApiBaseUrl, fetchGraph } from "@/lib/api";
 
 interface Node {
   id: string;
@@ -73,8 +73,7 @@ function GraphContent() {
     setLoading(true);
     const sourceQuery = activeTab.toLowerCase();
     
-    fetch(`${getApiBaseUrl()}/graph?source=${sourceQuery}`)
-      .then((res) => res.json())
+    fetchGraph(sourceQuery)
       .then((data) => {
         const nodes = data.nodes || [];
         const links = data.links || [];
