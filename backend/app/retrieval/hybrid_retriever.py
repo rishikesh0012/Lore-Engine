@@ -3,7 +3,7 @@ import asyncio
 from typing import List, Dict, Any
 
 from app.llm.nemotron_client import embed_texts, call_nemotron
-from app.retrieval.vector_search import search_chunks, embed_texts
+from app.retrieval.vector_search import search_chunks
 from app.graph.neo4j_client import db_client
 from app.extraction.entity_extractor import ENTITY_REGEXES
 
