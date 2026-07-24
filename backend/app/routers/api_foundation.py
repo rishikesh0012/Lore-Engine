@@ -315,7 +315,7 @@ def get_full_graph(
     source: Optional[str] = None,
     relation_filter: Optional[str] = None
 ):
-    data_dir = os.path.join(os.path.dirname(__file__), "..", "..", "data", "extracted")
+    data_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..", "data", "extracted"))
     
     # Target files mapping
     if source and source.lower() in ["hesiod_theogony", "hesiod"]:
