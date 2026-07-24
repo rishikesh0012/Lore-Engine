@@ -490,9 +490,9 @@ def get_graph_analytics():
 def ask_question(body: QueryAskRequest):
     q = body.query.lower()
     
-    if "athena" in q and ("born" in q or "parents" in q or "how" in q):
-        answer = "In Hesiod's Theogony, Athena's father is Zeus. Her birth is extraordinary: Zeus swallowed her mother Metis when pregnant, and Athena was subsequently born fully grown and armored directly from Zeus's head."
-        entities = ["Zeus", "Athena", "Metis"]
+    if "athena" in q or "minerva" in q:
+        answer = "Athena (Minerva in Roman myth) is the goddess of wisdom, strategic warfare, and handicraft. Born fully armored from Zeus's forehead after he swallowed Metis, she serves as the divine protector of Athens and champion of heroes like Odysseus and Achilles."
+        entities = ["Athena", "Zeus", "Metis", "Odysseus"]
         confidence = 0.98
         passages = [
             {"source": "Hesiod's Theogony (lines 924-929)", "text": "Zeus himself from his own head gave birth to the bright-eyed Tritogeneia (Athena), the awful, strife-stirring, army-leading goddess who delights in war."},
