@@ -10,10 +10,16 @@ from app.extraction.entity_extractor import ENTITY_REGEXES
 class HybridRetriever:
     def __init__(self):
         print("Initializing Hybrid Retriever...")
-        db_client.connect()
+        try:
+            db_client.connect()
+        except Exception as e:
+            print(f"Warning: Neo4j connection failed during initialization ({e}). Fallback mode active.")
         
     def __del__(self):
-        db_client.close()
+        try:
+            db_client.close()
+        except Exception:
+            pass
 
     def is_relational_query(self, query: str) -> bool:
         keywords = ["connect", "relate", "relationship", "between", "how are"]
